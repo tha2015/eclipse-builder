@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse>
+  <workDir>D:/tmp64</workDir>
+  <jdkUrl>http://download.oracle.com/otn-pub/java/jdk/8u51-b16/jdk-8u51-windows-x64.exe</jdkUrl>
+  <jdkSrcUrl>http://hg.openjdk.java.net/jdk8u/jdk8u/jdk/archive/ee8642297369.zip</jdkSrcUrl>
+  <dictionary>/dictionary4.xml</dictionary>
+  <plugins>
+    <plugin>
+      <name>package.jee</name>
+    </plugin>
+
+    <plugin>
+      <name>Spring</name>
+    </plugin>
+
+    <plugin>
+      <name>Groovy</name>
+    </plugin>
+
+    <plugin>
+      <name>Gradle</name>
+    </plugin>
+    <plugin>
+      <name>m2e-wtp</name>
+    </plugin>
+
+    <plugin>
+      <name>Optimizer</name>
+    </plugin>
+
+    <plugin>
+      <name>Subclipse</name>
+    </plugin>
+    <plugin>
+      <name>AnyEditTools</name>
+    </plugin>
+    <plugin>
+      <name>StartExplorer</name>
+    </plugin>
+    <plugin>
+      <name>Terminal4</name>
+    </plugin>
+    <plugin>
+      <name>JavaSourceAttacher</name>
+    </plugin>
+    <plugin>
+      <name>WindowsTools</name>
+    </plugin>
+    <plugin>
+      <name>JavaExamplesSearch</name>
+    </plugin>
+    <plugin>
+      <name>Zest</name>
+    </plugin>
+    <plugin>
+      <name>ClassDependencyViewer</name>
+    </plugin>
+    <plugin>
+      <name>FileSync</name>
+    </plugin>
+    <plugin>
+      <name>OracleServers</name>
+    </plugin>
+    <plugin>
+      <name>FindBugs</name>
+    </plugin>
+    <plugin>
+      <name>Checkstyle</name>
+    </plugin>
+    <plugin>
+      <name>CheckstyleUnhandledExceptionCheck</name>
+    </plugin>
+    <plugin>
+      <name>Zest</name>
+    </plugin>
+    <plugin>
+      <name>ClassDependencyViewer</name>
+    </plugin>
+    <plugin>
+      <name>JavaMC4HotSpotVM</name>
+    </plugin>
+    <plugin>
+      <name>TestNG</name>
+    </plugin>
+    <plugin>
+      <name>Sonar</name>
+    </plugin>
+<!--
+    <plugin>
+      <name>GoogleAppEngine</name>
+    </plugin>
+    <plugin>
+      <name>Android</name>
+    </plugin>
+ -->
+     <plugin>
+      <name>MylynGerrit</name>
+    </plugin>
+     <plugin>
+      <name>MylynGit</name>
+    </plugin>
+     <plugin>
+      <name>MylynJenkins</name>
+    </plugin>
+  </plugins>
+</eclipse>

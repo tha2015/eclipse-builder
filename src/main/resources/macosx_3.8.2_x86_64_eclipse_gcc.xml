@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse>
+  <workDir>/Users/tha/tmp</workDir>
+  <url>http://archive.eclipse.org/eclipse/downloads/drops/R-3.8.2-201301310800/eclipse-SDK-3.8.2-macosx-cocoa-x86_64.tar.gz</url>
+  <dictionary>/dictionary38.xml</dictionary>
+  <profile>SDKProfile</profile>
+  <plugins>
+    <plugin>
+      <name>Groovy</name>
+    </plugin>
+    <plugin>
+      <name>Subclipse</name>
+      <updateSite>http://subclipse.tigris.org/update_1.8.x/</updateSite>
+      <featureId>org.tigris.subversion.subclipse.feature.group</featureId>
+      <featureId>org.tigris.subversion.clientadapter.feature.feature.group</featureId>
+      <featureId>org.tigris.subversion.clientadapter.javahl.feature.feature.group</featureId>
+      <featureId>org.tigris.subversion.clientadapter.svnkit.feature.feature.group</featureId>
+      <featureId>org.tmatesoft.svnkit.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>cpp</name>
+    </plugin>
+    <plugin>
+      <name>Web</name>
+    </plugin>
+    <plugin>
+      <name>AnyEditTools</name>
+    </plugin>
+  </plugins>
+</eclipse>

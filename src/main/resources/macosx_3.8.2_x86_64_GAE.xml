@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse>
+  <workDir>/Users/thaiha/tmp</workDir>
+  <dictionary>/dictionary38.xml</dictionary>
+  <url>http://archive.eclipse.org/eclipse/downloads/drops/R-3.8.2-201301310800/eclipse-SDK-3.8.2-macosx-cocoa-x86_64.tar.gz</url>
+  <profile>epp.package.jee</profile>
+  <plugins>
+    <plugin>
+      <name>GoogleAppEngine</name>
+    </plugin>
+    <plugin>
+      <name>Subclipse</name>
+    </plugin>
+    <plugin>
+      <name>egit</name>
+    </plugin>
+    <plugin>
+      <name>AnyEditTools</name>
+    </plugin>
+<!--
+    <plugin>
+      <name>ContextMenu</name>
+    </plugin>
+    <plugin>
+      <name>StartExplorer</name>
+    </plugin>
+    <plugin>
+      <name>PropEdit</name>
+    </plugin>
+ -->
+    <plugin>
+      <name>JavaSourceAttacher</name>
+    </plugin>
+    <plugin>
+      <name>JavaExamplesSearch</name>
+    </plugin>
+    <plugin>
+      <name>Zest</name>
+    </plugin>
+    <plugin>
+      <name>ClassDependencyViewer</name>
+    </plugin>
+    <plugin>
+      <name>datanucleus</name>
+    </plugin>
+
+
+  </plugins>
+</eclipse>

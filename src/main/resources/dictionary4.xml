@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse>
+  <workDir>/tmp</workDir>
+  <profile>SDKProfile</profile>
+  <url>http://download.eclipse.org/eclipse/downloads/drops4/R-4.5-201506032000/eclipse-SDK-4.5-win32-x86_64.zip</url>
+  <plugins>
+    <plugin>
+      <name>Groovy</name>
+      <embeded>true</embeded>
+      <updateSite>http://dist.springsource.org/snapshot/GRECLIPSE/e4.5/</updateSite>
+      <featureId>org.codehaus.groovy.eclipse.feature.feature.group</featureId>
+      <featureId>org.codehaus.groovy18.feature.feature.group</featureId>
+      <featureId>org.codehaus.groovy20.feature.feature.group</featureId>
+      <featureId>org.codehaus.groovy21.feature.feature.group</featureId>
+      <featureId>org.codehaus.groovy22.feature.feature.group</featureId>
+      <featureId>org.codehaus.groovy23.feature.feature.group</featureId>
+      <featureId>org.codehaus.groovy24.feature.feature.group</featureId>
+      <featureId>org.codehaus.groovy.jdt.patch.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>m2e</name>
+      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
+      <featureId>org.eclipse.m2e.feature.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>m2e-wtp</name>
+      <updateSite>http://download.eclipse.org/m2e-wtp/releases/mars/</updateSite>
+      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
+      <featureId>org.eclipse.m2e.wtp.feature.feature.group</featureId>
+    </plugin>
+
+    <plugin>
+      <name>AJDT</name>
+      <embeded>true</embeded>
+      <updateSite>http://download.eclipse.org/tools/ajdt/45/dev/update</updateSite>
+      <featureId>org.eclipse.ajdt.feature.group</featureId>
+      <!--osgi.framework.extensions=reference\:file\:org.eclipse.equinox.weaving.hook_1.0.100.HEAD.jar -->
+    </plugin>
+
+    <!-- zest -->
+    <plugin>
+      <name>Zest</name>
+      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
+      <featureId>org.eclipse.zest.feature.group</featureId>
+    </plugin>
+
+    <!-- MarketplaceClient -->
+    <plugin>
+      <name>MarketplaceClient</name>
+      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
+      <featureId>org.eclipse.epp.mpc.feature.group</featureId>
+    </plugin>
+
+    <!-- package.rcp -->
+    <plugin>
+      <name>package.rcp</name>
+      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
+      <featureId>epp.package.rcp</featureId>
+    </plugin>
+    <plugin>
+      <name>e4tools</name>
+      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
+      <featureId>org.eclipse.e4.core.tools.feature.source.feature.group</featureId>
+      <updateSite>http://dl.bintray.com/vogellacompany/e4tools</updateSite>
+      <featureId>org.eclipse.e4.tools.spies.feature.feature.group</featureId>
+    </plugin>
+
+    <!-- package.jee -->
+    <plugin>
+      <name>package.jee</name>
+      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
+      <featureId>epp.package.jee</featureId>
+    </plugin>
+
+    <!-- package.php -->
+    <plugin>
+      <name>package.php</name>
+      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
+      <featureId>epp.package.php</featureId>
+    </plugin>
+    <plugin>
+      <name>ZendPHPDebugger</name>
+      <!-- http://blog.gbinghan.com/2011/08/eclipse-zend-pdt-installation-error.html -->
+      <url>http://downloads.zend.com/pdt/</url>
+      <featureId>org.zend.php.debug_feature.feature.group</featureId>
+    </plugin>
+
+    <!-- package.cpp -->
+    <plugin>
+      <name>package.cpp</name>
+      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
+      <featureId>epp.package.cpp</featureId>
+    </plugin>
+    <plugin>
+      <name>cmakeed</name>
+      <updateSite>http://master.dl.sourceforge.net/project/cmakeed/eclipse/site.xml</updateSite>
+      <featureId>com.cthing.cmakeed.feature.feature.group</featureId>
+    </plugin>
+
+
+    <!-- android -->
+    <plugin>
+      <name>Android</name>
+      <url>http://dl.google.com/android/android-sdk_r24.3.3-windows.zip</url>
+      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
+      <featureId>com.android.ide.eclipse.ddms.feature.feature.group</featureId>
+      <featureId>com.android.ide.eclipse.adt.feature.feature.group</featureId>
+      <featureId>com.android.ide.eclipse.hierarchyviewer.feature.feature.group</featureId>
+      <featureId>com.android.ide.eclipse.traceview.feature.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>AndroidSource</name>
+      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
+      <updateSite>http://adt-addons.googlecode.com/svn/trunk/source/com.android.ide.eclipse.source.update/</updateSite>
+      <featureId>com.android.ide.eclipse.source.feature.group</featureId>
+    </plugin>
+
+    <!-- ARM Development Studio 5 Community Edition for Eclipse version 3.7 (Indigo) 32-bit-->
+    <plugin>
+      <name>ARMDevStudio5</name>
+      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
+      <updateSite>http://tools.arm.com/eclipse/</updateSite>
+      <featureId>com.arm.ds.community.feature.feature.group</featureId>
+    </plugin>
+
+    <!-- tools -->
+    <plugin>
+      <name>Subclipse</name>
+      <updateSite>http://subclipse.tigris.org/update_1.10.x</updateSite>
+      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
+      <featureId>org.tigris.subversion.subclipse.feature.group</featureId>
+      <featureId>org.tigris.subversion.clientadapter.feature.feature.group</featureId>
+      <featureId>org.tigris.subversion.clientadapter.javahl.feature.feature.group</featureId>
+      <featureId>org.tigris.subversion.clientadapter.svnkit.feature.feature.group</featureId>
+      <featureId>org.tmatesoft.svnkit.feature.group</featureId>
+      <featureId>org.tigris.subversion.subclipse.mylyn.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>egit</name>
+      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
+      <featureId>org.eclipse.egit.feature.group</featureId>
+      <featureId>org.eclipse.egit.mylyn.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>emfforms</name>
+      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
+      <featureId>org.eclipse.emf.ecp.emfforms.sdk.feature.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>AnyEditTools</name>
+      <updateSite>http://andrei.gmxhome.de/eclipse/</updateSite>
+      <featureId>AnyEditTools.feature.group</featureId>
+      <!-- <url>https://dl.bintray.com/iloveeclipse/plugins/de.loskutov.anyedit.AnyEditTools_2.4.13.201503032100.jar</url> -->
+    </plugin>
+    <!--
+    <plugin>
+      <name>ContextMenu</name>
+      <url>http://timealias.bplaced.net/ContextMenuPlugin/contextmenu_1.2.3.jar</url>
+    </plugin>
+      -->
+    <plugin>
+      <name>StartExplorer</name>
+      <updateSite>http://basti1302.github.com/startexplorer/update/</updateSite>
+      <featureId>de.bastiankrol.startexplorer.feature.feature.group</featureId>
+    </plugin>
+    <!-- java tools -->
+    <plugin>
+      <name>JDepend4Eclipse</name>
+      <url>http://jdepend4eclipse.eclipselabs.org.codespot.com/files/de.loskutov.eclipse.jdepend_1.2.3.201108071203.jar</url>
+    </plugin>
+    <plugin>
+      <name>UCDetector</name>
+      <updateSite>http://ucdetector.sourceforge.net/update</updateSite>
+      <featureId>org.ucdetector.feature.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>FindBugs</name>
+      <updateSite>http://findbugs.cs.umd.edu/eclipse</updateSite>
+      <featureId>edu.umd.cs.findbugs.plugin.eclipse.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>Lint4J</name>
+      <url>http://www.jutils.com/eclipse-update/lint4j-eclipse-plugin.zip</url>
+      <featureId>com.jutils.lint4j.core.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>Checkstyle</name>
+      <updateSite>http://eclipse-cs.sf.net/update/</updateSite>
+      <featureId>net.sf.eclipsecs.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>CheckstyleUnhandledExceptionCheck</name>
+      <url>http://free-plugins.eclipselabs.org.codespot.com/files/UnhandledExceptionCheck_1.0.0.jar</url>
+    </plugin>
+    <plugin>
+      <name>Log4E</name>
+      <url>http://log4e.jayefem.de/download/eclipse3/de.jayefem.log4e_free_1.3.3.zip</url>
+    </plugin>
+    <plugin>
+      <name>JavaSourceAttacher</name>
+      <updateSite>http://svn.codespot.com/a/eclipselabs.org/free-plugins/trunk/site/</updateSite>
+      <featureId>org.freejava.javasourceattacher.feature.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>JavaExamplesSearch</name>
+      <updateSite>http://svn.codespot.com/a/eclipselabs.org/free-plugins/trunk/site/</updateSite>
+      <featureId>org.freejava.javaexamplessearch.feature.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>WindowsTools</name>
+      <updateSite>http://svn.codespot.com/a/eclipselabs.org/free-plugins/trunk/site/</updateSite>
+      <featureId>org.freejava.windowstools.feature.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>ProjectImpport</name>
+      <updateSite>http://svn.codespot.com/a/eclipselabs.org/free-plugins/trunk/site/</updateSite>
+      <featureId>org.freejava.projectimpport.feature.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>ClassDependencyViewer</name>
+      <updateSite>http://svn.codespot.com/a/eclipselabs.org/free-plugins/trunk/site/</updateSite>
+      <featureId>org.freejava.dependencyviewer.feature.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>TomcatPlugin</name>
+      <url>http://www.eclipsetotale.com/tomcatPlugin/tomcatPluginV33.zip</url>
+    </plugin>
+    <plugin>
+      <name>FileSync</name>
+      <url>http://filesync4eclipse.eclipselabs.org.codespot.com/files/de.loskutov.FileSync_1.3.8.201104160944.jar</url>
+    </plugin>
+    <plugin>
+      <name>JavaHexEditor</name>
+      <url>http://nchc.dl.sourceforge.net/project/javahexeditor/javahexeditor/0.4.1/net.sourceforge.javahexeditor_0.4.1.jar</url>
+    </plugin>
+    <plugin>
+      <name>PropEdit</name>
+      <url>http://iij.dl.sourceforge.jp/propedit/40156/jp.gr.java_conf.ussiy.app.propedit_5.3.3.zip</url>
+    </plugin>
+    <plugin>
+      <name>eSpell</name>
+      <url>http://www.bdaum.de/eclipse/eSpell3/eSpell_3.2.4_site.zip</url>
+      <featureId>com.bdaum.SpellChecker3.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>QuickREx</name>
+      <url>http://nchc.dl.sourceforge.net/project/quickrex/QuickREx%20Plug-In/Version%203.5.0/QuickREx_3.5.0.jar</url>
+    </plugin>
+    <plugin>
+      <name>SQLExplorer</name>
+      <url>http://nchc.dl.sourceforge.net/project/eclipsesql/SQL%20Explorer%20Plugin/3.6.1/sqlexplorer_plugin-3.6.1_SR2.zip</url>
+    </plugin>
+    <plugin>
+      <name>CodePro</name>
+      <updateSite>http://dl.google.com/eclipse/inst/codepro/latest/3.7</updateSite>
+      <featureId>com.instantiations.eclipse.coverage.codepro.feature.group</featureId>
+      <featureId>com.instantiations.assist.eclipse.coverage.feature.group</featureId>
+      <featureId>com.instantiations.assist.eclipse.ant.feature.group</featureId>
+      <featureId>com.instantiations.assist.eclipse.audit.feature.group</featureId>
+      <featureId>com.instantiations.eclipse.core.feature.feature.group</featureId>
+      <featureId>com.instantiations.eclipse.analysis.appanalysis.feature.feature.group</featureId>
+      <featureId>com.instantiations.eclipse.unittester.feature.feature.group</featureId>
+      <featureId>com.instantiations.eclipse.analysis.utilities.feature.group</featureId>
+      <featureId>com.instantiations.eclipse.shared.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>JSEclipse</name>
+      <updateSite>http://download.macromedia.com/pub/labs/jseclipse/autoinstall/site.xml</updateSite>
+      <featureId>com.interaktonline.jseclipse.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>Spring</name>
+      <url>http://download.springsource.com/release/TOOLS/update/3.6.4.RELEASE/e4.5/springsource-tool-suite-3.6.4.RELEASE-e4.5-updatesite.zip</url>
+      <updateSite>http://dist.springsource.com/release/TOOLS/update/e4.5/</updateSite>
+      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
+      <featureId>org.springframework.ide.eclipse.feature.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>EclipseTidy</name>
+      <url>http://nchc.dl.sourceforge.net/project/eclipsetidy/eclipsetidy/1.2.2/net.sf.eclipsetidy_1.2.2_local_site.zip</url>
+      <featureId>net.sf.eclipsetidy.feature.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>Hibernate</name>
+      <updateSite>http://download.jboss.org/jbosstools/updates/stable/mars/</updateSite>
+      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
+      <featureId>org.hibernate.eclipse.feature.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>Hibernate_Struts</name>
+      <updateSite>http://download.jboss.org/jbosstools/updates/stable/mars/</updateSite>
+      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
+      <featureId>org.hibernate.eclipse.feature.feature.group</featureId>
+      <featureId>org.jboss.tools.struts.feature.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>FreeMarker</name>
+      <updateSite>http://download.jboss.org/jbosstools/updates/stable/mars/</updateSite>
+      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
+      <featureId>org.jboss.ide.eclipse.freemarker.feature.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>JAXRS</name>
+      <updateSite>http://download.jboss.org/jbosstools/updates/stable/mars/</updateSite>
+      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
+      <featureId>org.jboss.tools.ws.jaxrs.feature.feature.group</featureId>
+    </plugin>
+
+
+    <plugin>
+      <name>Aptana-Nightly</name>
+      <updateSite>http://preview.appcelerator.com/aptana/studio3/plugin/update/nightly/</updateSite>
+      <featureId>com.aptana.webkitbrowser.feature.group</featureId>
+      <featureId>com.aptana.feature.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>OracleServers</name>
+      <updateSite>http://download.oracle.com/otn_software/oepe/12.1.3.6/mars/repository/</updateSite>
+      <updateSite>http://download.oracle.com/otn_software/oepe/12.1.3.6/mars/repository/dependencies/</updateSite>
+<!--      <updateSite>http://download.oracle.com/otn_software/oepe/library/eclipse-4.5.2</updateSite>
+      <updateSite>http://download.oracle.com/otn_software/oepe/library/eclipse-mars-sr2</updateSite>
+-->
+      <!-- Available url -->
+      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
+      <!-- Glassfish and WebLogic -->
+      <featureId>oracle.eclipse.tools.glassfish.feature.group</featureId>
+      <featureId>oracle.eclipse.tools.weblogic.feature.group</featureId>
+
+    </plugin>
+    <plugin>
+      <name>Mylyn</name>
+      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
+      <updateSite>http://download.eclipse.org/mylyn/releases/latest</updateSite>
+      <featureId>org.eclipse.mylyn.bugzilla_feature.feature.group</featureId>
+      <featureId>org.eclipse.mylyn.context_feature.feature.group</featureId>
+      <featureId>org.eclipse.mylyn.ide_feature.feature.group</featureId>
+      <featureId>org.eclipse.mylyn.java_feature.feature.group</featureId>
+      <featureId>org.eclipse.mylyn.team_feature.feature.group</featureId>
+      <featureId>org.eclipse.mylyn.wikitext_feature.feature.group</featureId>
+      <featureId>org.eclipse.mylyn_feature.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>MylynGerrit</name>
+      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
+      <updateSite>http://download.eclipse.org/mylyn/releases/latest</updateSite>
+      <featureId>org.eclipse.mylyn.gerrit.feature.feature.group</featureId>
+      <featureId>org.eclipse.mylyn.gerrit.dashboard.feature.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>MylynGit</name>
+      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
+      <updateSite>http://download.eclipse.org/mylyn/releases/latest</updateSite>
+      <featureId>org.eclipse.mylyn.git.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>MylynJenkins</name>
+      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
+      <updateSite>http://download.eclipse.org/mylyn/releases/latest</updateSite>
+      <featureId>org.eclipse.mylyn.hudson.feature.group</featureId>
+    </plugin>
+
+
+    <plugin>
+      <name>JIRA</name>
+      <updateSite>http://update.atlassian.com/atlassian-eclipse-plugin/e3.7</updateSite>
+      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
+      <updateSite>http://download.eclipse.org/mylyn/releases/latest</updateSite>
+      <featureId>com.atlassian.connector.eclipse.jira.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>Jetty</name>
+      <updateSite>http://download.eclipse.org/jetty/updates/jetty-wtp/</updateSite>
+      <featureId>org.eclipse.jst.server.jetty.feature.feature.group</featureId>
+    </plugin>
+
+
+    <plugin>
+      <name>Terminal</name>
+      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
+      <featureId>org.eclipse.rse.feature.group</featureId>
+      <featureId>org.eclipse.rse.useractions.feature.group</featureId>
+      <featureId>org.eclipse.tm.terminal.feature.group</featureId>
+      <featureId>org.eclipse.tm.terminal.ssh.feature.group</featureId>
+      <featureId>org.eclipse.tm.terminal.telnet.feature.group</featureId>
+      <featureId>org.eclipse.tm.terminal.view.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>Terminal4</name>
+      <updateSite>http://download.eclipse.org/tm/terminal/marketplace/</updateSite>
+      <featureId>org.eclipse.tm.terminal.feature.feature.group</featureId>
+    </plugin>
+
+    <plugin>
+      <name>BytecodeOutline</name>
+      <updateSite>http://andrei.gmxhome.de/eclipse/</updateSite>
+      <featureId>de.loskutov.BytecodeOutline.feature.feature.group</featureId>
+    </plugin>
+
+    <plugin>
+      <name>EclipseCodeRecommenders</name>
+      <updateSite>http://download.eclipse.org/recommenders/updates/dev/e37</updateSite>
+      <featureId>org.eclipse.recommenders.feature.completion.rcp.intellig.e37.feature.group</featureId>
+    </plugin>
+
+
+    <plugin>
+      <name>GoogleAppEngine</name>
+      <updateSite>https://dl.google.com/eclipse/plugin/4.4</updateSite>
+      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
+      <updateSite>http://download.eclipse.org/m2e-wtp/releases/mars/</updateSite>
+      <featureId>com.google.appengine.eclipse.wtp.maven.feature.feature.group</featureId>
+      <featureId>com.google.gdt.eclipse.suite.e44.feature.feature.group</featureId>
+      <featureId>com.google.appengine.eclipse.sdkbundle.feature.feature.group</featureId>
+    </plugin>
+
+    <plugin>
+      <name>datanucleus</name>
+      <updateSite>http://www.datanucleus.org/downloads/eclipse-update/</updateSite>
+      <featureId>org.datanucleus.ide.eclipse.feature.feature.group</featureId>
+    </plugin>
+
+    <plugin>
+      <name>WordWrap</name>
+      <updateSite>http://dev.cdhq.de/eclipse/updatesite/mars/</updateSite>
+      <featureId>de.cdhq.eclipse.linenumberfix.mars.feature.feature.group</featureId>
+      <featureId>de.cdhq.eclipse.wordwrap.feature.feature.group</featureId>
+    </plugin>
+
+    <plugin>
+      <name>Gradle</name>
+      <updateSite>http://dist.springsource.com/release/TOOLS/gradle</updateSite>
+      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
+      <featureId>org.springsource.ide.eclipse.gradle.feature.feature.group</featureId>
+    </plugin>
+
+    <plugin>
+      <name>JRockitMC</name><!--  for JRockit VM only -->
+      <updateSite>http://download.oracle.com/technology/products/missioncontrol/updatesites/base/4.1.0/eclipse/</updateSite>
+      <featureId>com.jrockit.mc.feature.ide.feature.group</featureId>
+    </plugin>
+
+    <plugin>
+      <name>JRockitMCExperimental</name><!--  for JRockit VM only -->
+      <updateSite>http://download.oracle.com/technology/products/missioncontrol/updatesites/experimental/4.1.0/eclipse/</updateSite>
+      <featureId>com.jrockit.mc.feature.console.ext.coherence.feature.group</featureId>
+      <featureId>com.jrockit.mc.feature.console.action.hprof.feature.group</featureId>
+      <featureId>com.jrockit.mc.feature.jconsole.feature.group</featureId>
+      <featureId>com.jrockit.mc.feature.dtrace.recorder.feature.group</featureId>
+      <featureId>com.jrockit.mc.feature.dtrace.ide.feature.group</featureId>
+      <featureId>com.jrockit.mc.feature.dtrace.samples.feature.group</featureId>
+      <featureId>com.jrockit.mc.feature.flightrecorder.backgroundrendering.feature.group</featureId>
+      <featureId>com.jrockit.mc.feature.flightrecorder.ext.wls.feature.group</featureId>
+      <featureId>com.jrockit.mc.feature.wls.feature.group</featureId>
+    </plugin>
+
+    <plugin><!--  for HotSpot VM only, target JVM must be started with  -XX:+UnlockCommercialFeatures -XX:+FlightRecorder -->
+      <name>JavaMC4HotSpotVM</name>
+      <url>http://download.oracle.com/technology/products/missioncontrol/updatesites/jmc-updatesite-5.5.0.zip</url>
+      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
+      <featureId>com.jrockit.mc.feature.ide.feature.group</featureId>
+    </plugin>
+
+    <plugin><!--  for HotSpot VM only -->
+      <name>TPTP</name>
+      <updateSite>http://download.eclipse.org/tptp/updates/</updateSite>
+      <featureId>org.eclipse.tptp.monitoring.runtime.feature.group</featureId>
+      <featureId>org.eclipse.tptp.platform.runtime.feature.group</featureId>
+      <featureId>org.eclipse.tptp.wtp.feature.group</featureId>
+      <featureId>org.eclipse.tptp.examples.feature.group</featureId>
+      <featureId>org.eclipse.tptp.birt.feature.group</featureId>
+      <featureId>org.eclipse.tptp.test.runtime.feature.group</featureId>
+      <featureId>org.eclipse.tptp.trace.runtime.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>TestNG</name>
+      <updateSite>http://beust.com/eclipse</updateSite>
+      <featureId>org.testng.eclipse.feature.group</featureId>
+    </plugin>
+
+    <plugin>
+      <name>Sonar</name>
+      <updateSite>http://downloads.sonarsource.com/eclipse/eclipse/</updateSite>
+      <featureId>org.sonar.ide.eclipse.jdt.feature.feature.group</featureId>
+      <featureId>org.sonar.ide.eclipse.m2e.feature.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>Optimizer</name>
+      <updateSite>http://update.zeroturnaround.com/free-tools/site/</updateSite>
+      <featureId>com.zeroturnaround.eclipse.optimizer.feature.feature.group</featureId>
+    </plugin>
+  </plugins>
+</eclipse>

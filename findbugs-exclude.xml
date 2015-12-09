@@ -1,0 +1,29 @@
+<FindBugsFilter>
+  <Match>
+    <Class name="~.*Test$"/>
+  </Match>
+  <Match>
+    <Package name="~test\..*"/>
+  </Match>
+  <Match>
+    <Bug pattern="
+    SE_BAD_FIELD,
+    SE_NO_SERIALVERSIONID,
+    DB_DUPLICATE_SWITCH_CLAUSES,
+    SF_SWITCH_NO_DEFAULT,
+    MS_PKGPROTECT,
+    WMI_WRONG_MAP_ITERATOR,
+    NM_CONFUSING,
+    NM_FIELD_NAMING_CONVENTION,
+    DM_CONVERT_CASE,
+    BC_UNCONFIRMED_CAST,
+    EI_EXPOSE_REP,
+    EI_EXPOSE_REP2,
+    REC_CATCH_EXCEPTION,
+    IMA_INEFFICIENT_MEMBER_ACCESS,
+    UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR,
+    SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+
+
+</FindBugsFilter>
