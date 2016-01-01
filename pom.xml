@@ -79,7 +79,6 @@
     </dependency>
     -->
     <!-- Groovy runtime -->
-    <!-- Groovy runtime -->
     <dependency>
       <groupId>org.codehaus.groovy</groupId>
       <artifactId>groovy-all</artifactId>
@@ -349,36 +348,51 @@
         </executions>
       </plugin>
 
-      <plugin>
-        <groupId>org.bluestemsoftware.open.maven.plugin</groupId>
-        <artifactId>launch4j-plugin</artifactId>
-        <version>1.5.0.0</version>
-        <executions>
-          <execution>
-            <id>eclipse-dropins-builder-exe</id>
-            <phase>package</phase>
-            <goals>
-              <goal>launch4j</goal>
-            </goals>
-            <configuration>
-              <headerType>console</headerType>
-              <outfile>target/eclipse-dropins-builder.exe</outfile>
-              <jar>target/eclipse-dropins-builder-1.0-SNAPSHOT.jar</jar>
-              <errTitle>eclipse-dropins-builder</errTitle>
-              <classPath>
-                <mainClass>sample.startup.Main</mainClass>
-              </classPath>
-              <jre>
-                <minVersion>1.6.0</minVersion>
-                <maxHeapSize>256</maxHeapSize>
-              </jre>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
+
 
     </plugins>
   </build>
+
+  <profiles>
+    <profile>
+      <activation>
+        <os>
+          <family>Windows</family>
+        </os>
+      </activation>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.bluestemsoftware.open.maven.plugin</groupId>
+            <artifactId>launch4j-plugin</artifactId>
+            <version>1.5.0.0</version>
+            <executions>
+              <execution>
+                <id>eclipse-dropins-builder-exe</id>
+                <phase>package</phase>
+                <goals>
+                  <goal>launch4j</goal>
+                </goals>
+                <configuration>
+                  <headerType>console</headerType>
+                  <outfile>target/eclipse-dropins-builder.exe</outfile>
+                  <jar>target/eclipse-dropins-builder-1.0-SNAPSHOT.jar</jar>
+                  <errTitle>eclipse-dropins-builder</errTitle>
+                  <classPath>
+                    <mainClass>sample.startup.Main</mainClass>
+                  </classPath>
+                  <jre>
+                    <minVersion>1.6.0</minVersion>
+                    <maxHeapSize>256</maxHeapSize>
+                  </jre>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
 
   <repositories>
     <repository>
