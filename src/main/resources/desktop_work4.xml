@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <eclipse>
-  <workDir>D:/tmp64</workDir>
-  <jdkUrl>http://download.oracle.com/otn-pub/java/jdk/8u51-b16/jdk-8u51-windows-x64.exe</jdkUrl>
-  <jdkSrcUrl>http://hg.openjdk.java.net/jdk8u/jdk8u/jdk/archive/ee8642297369.zip</jdkSrcUrl>
+  <workDir>T:/tmp64</workDir>
+  <jdkUrl>http://download.oracle.com/otn-pub/java/jdk/8u74-b02/jdk-8u74-windows-x64.exe</jdkUrl>
+  <jdkSrcUrl>http://hg.openjdk.java.net/jdk8u/jdk8u/jdk/archive/02e120964805.zip</jdkSrcUrl>
   <dictionary>/dictionary4.xml</dictionary>
   <plugins>
     <plugin>
@@ -22,10 +22,6 @@
     </plugin>
     <plugin>
       <name>m2e-wtp</name>
-    </plugin>
-
-    <plugin>
-      <name>Optimizer</name>
     </plugin>
 
     <plugin>
@@ -102,5 +98,12 @@
      <plugin>
       <name>MylynJenkins</name>
     </plugin>
+
+
+    <!-- Java agent plugin should be the last -->
+    <plugin>
+      <name>Optimizer</name>
+    </plugin>
+
   </plugins>
 </eclipse>
