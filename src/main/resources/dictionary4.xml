@@ -198,27 +198,27 @@
     </plugin>
     <plugin>
       <name>JavaSourceAttacher</name>
-      <updateSite>http://svn.codespot.com/a/eclipselabs.org/free-plugins/trunk/site/</updateSite>
+      <updateSite>https://dl.bintray.com/tha/eclipserepo/</updateSite>
       <featureId>org.freejava.javasourceattacher.feature.feature.group</featureId>
     </plugin>
     <plugin>
       <name>JavaExamplesSearch</name>
-      <updateSite>http://svn.codespot.com/a/eclipselabs.org/free-plugins/trunk/site/</updateSite>
+      <updateSite>https://dl.bintray.com/tha/eclipserepo/</updateSite>
       <featureId>org.freejava.javaexamplessearch.feature.feature.group</featureId>
     </plugin>
     <plugin>
       <name>WindowsTools</name>
-      <updateSite>http://svn.codespot.com/a/eclipselabs.org/free-plugins/trunk/site/</updateSite>
+      <updateSite>https://dl.bintray.com/tha/eclipserepo/</updateSite>
       <featureId>org.freejava.windowstools.feature.feature.group</featureId>
     </plugin>
     <plugin>
       <name>ProjectImpport</name>
-      <updateSite>http://svn.codespot.com/a/eclipselabs.org/free-plugins/trunk/site/</updateSite>
+      <updateSite>https://dl.bintray.com/tha/eclipserepo/</updateSite>
       <featureId>org.freejava.projectimpport.feature.feature.group</featureId>
     </plugin>
     <plugin>
       <name>ClassDependencyViewer</name>
-      <updateSite>http://svn.codespot.com/a/eclipselabs.org/free-plugins/trunk/site/</updateSite>
+      <updateSite>https://dl.bintray.com/tha/eclipserepo/</updateSite>
       <featureId>org.freejava.dependencyviewer.feature.feature.group</featureId>
     </plugin>
     <plugin>
