@@ -14,9 +14,7 @@
     <plugin>
       <name>package.rcp</name>
     </plugin>
-   <plugin>
-      <name>e4tools</name>
-    </plugin>
+
 
     <plugin>
       <name>Spring</name>
@@ -76,9 +74,7 @@
     <plugin>
       <name>Checkstyle</name>
     </plugin>
-    <plugin>
-      <name>CheckstyleUnhandledExceptionCheck</name>
-    </plugin>
+
     <plugin>
       <name>Zest</name>
     </plugin>
