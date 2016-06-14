@@ -84,7 +84,7 @@
       <name>TestNG</name>
     </plugin>
     <plugin>
-      <name>Sonar</name>
+      <name>Sonarlint</name>
     </plugin>
 <!--
     <plugin>
