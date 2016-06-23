@@ -55,7 +55,44 @@
     <plugin>
       <name>package.rcp</name>
       <updateSite>http://download.eclipse.org/releases/neon/</updateSite>
+
+      <!-- https://git.eclipse.org/r/#/c/67008/2/packages/org.eclipse.epp.package.rcp.product/epp.product -->
+
       <featureId>epp.package.rcp</featureId>
+
+      <featureId>org.eclipse.jdt.feature.group</featureId>
+      <featureId>org.eclipse.pde.feature.group</featureId>
+      <featureId>org.eclipse.platform.source.feature.group</featureId>
+      <featureId>org.eclipse.rcp.source.feature.group</featureId>
+
+      <featureId>org.eclipse.buildship.feature.group</featureId>
+      <featureId>org.eclipse.e4.core.tools.feature.feature.group</featureId>
+      <!-- not available in Neon on 2016-02-21
+      <featureId>org.eclipse.egit.import"/>
+      -->
+      <featureId>org.eclipse.egit.feature.group</featureId>
+      <featureId>org.eclipse.egit.mylyn.feature.group</featureId>
+      <featureId>org.eclipse.m2e.feature.feature.group</featureId>
+      <featureId>org.eclipse.m2e.logback.feature.feature.group</featureId>
+      <featureId>org.eclipse.mylyn.bugzilla_feature.feature.group</featureId>
+      <featureId>org.eclipse.mylyn.context_feature.feature.group</featureId>
+      <featureId>org.eclipse.mylyn.gerrit.feature.feature.group</featureId>
+      <featureId>org.eclipse.mylyn.git.feature.group</featureId>
+      <featureId>org.eclipse.mylyn.hudson.feature.group</featureId>
+      <featureId>org.eclipse.mylyn.ide_feature.feature.group</featureId>
+      <featureId>org.eclipse.mylyn.java_feature.feature.group</featureId>
+      <featureId>org.eclipse.mylyn.pde_feature.feature.group</featureId>
+      <featureId>org.eclipse.mylyn.wikitext_feature.feature.group</featureId>
+      <featureId>org.eclipse.rap.tools.feature.feature.group</featureId>
+      <featureId>org.eclipse.recommenders.mylyn.rcp.feature.feature.group</featureId>
+      <featureId>org.eclipse.recommenders.rcp.feature.feature.group</featureId>
+      <featureId>org.eclipse.recommenders.snipmatch.rcp.feature.feature.group</featureId>
+      <featureId>org.eclipse.swtbot.eclipse.gef.feature.group</featureId>
+      <featureId>org.eclipse.swtbot.eclipse.feature.group</featureId>
+      <featureId>org.eclipse.swtbot.ide.feature.group</featureId>
+      <featureId>org.eclipse.wb.core.ui.feature.feature.group</featureId>
+      <featureId>org.eclipse.wb.rcp.feature.feature.group</featureId>
+      <featureId>org.eclipse.wst.xml_ui.feature.feature.group</featureId>
     </plugin>
     <plugin>
       <name>e4tools</name>
@@ -69,15 +106,99 @@
     <plugin>
       <name>package.jee</name>
       <updateSite>http://download.eclipse.org/releases/neon/</updateSite>
+
+      <!-- https://git.eclipse.org/r/#/c/67004/3/packages/org.eclipse.epp.package.jee.product/epp.product  -->
+      <!--  https://bugs.eclipse.org/bugs/show_bug.cgi?id=332989#c19 -->
+
       <featureId>epp.package.jee</featureId>
+
+      <featureId>org.eclipse.datatools.common.doc.user.feature.group</featureId>
+      <featureId>org.eclipse.datatools.connectivity.doc.user.feature.group</featureId>
+      <featureId>org.eclipse.datatools.connectivity.feature.feature.group</featureId>
+      <featureId>org.eclipse.datatools.doc.user.feature.group</featureId>
+      <featureId>org.eclipse.datatools.enablement.feature.feature.group</featureId>
+      <featureId>org.eclipse.datatools.intro.feature.group</featureId>
+      <featureId>org.eclipse.datatools.modelbase.feature.feature.group</featureId>
+      <featureId>org.eclipse.datatools.sqldevtools.feature.feature.group</featureId>
+      <featureId>org.eclipse.datatools.sqltools.doc.user.feature.group</featureId>
+
+      <!-- not available in Neon on 2016-02-21
+      <featureId>org.eclipse.egit.import.feature.group</featureId>
+      -->
+      <featureId>org.eclipse.egit.feature.group</featureId>
+      <featureId>org.eclipse.egit.mylyn.feature.group</featureId>
+
+      <featureId>org.eclipse.jdt.feature.group</featureId>
+
+      <featureId>org.eclipse.jpt.common.eclipselink.feature.feature.group</featureId>
+      <featureId>org.eclipse.jpt.common.feature.feature.group</featureId>
+      <featureId>org.eclipse.jpt.dbws.eclipselink.feature.feature.group</featureId>
+      <featureId>org.eclipse.jpt.jaxb.eclipselink.feature.feature.group</featureId>
+      <featureId>org.eclipse.jpt.jaxb.feature.feature.group</featureId>
+      <featureId>org.eclipse.jpt.jpa.eclipselink.feature.feature.group</featureId>
+      <featureId>org.eclipse.jpt.jpa.feature.feature.group</featureId>
+
+      <featureId>org.eclipse.jsf.feature.feature.group</featureId>
+
+      <featureId>org.eclipse.jst.common.fproj.enablement.jdt.feature.group</featureId>
+      <featureId>org.eclipse.jst.enterprise_ui.feature.feature.group</featureId>
+      <featureId>org.eclipse.jst.jsf.apache.trinidad.tagsupport.feature.feature.group</featureId>
+      <featureId>org.eclipse.jst.jsf.apache.trinidad.tagsupport.feature.feature.group</featureId>
+      <featureId>org.eclipse.jst.server_adapters.ext.feature.feature.group</featureId>
+      <featureId>org.eclipse.jst.server_adapters.feature.feature.group</featureId>
+      <featureId>org.eclipse.jst.server_ui.feature.feature.group</featureId>
+      <featureId>org.eclipse.jst.webpageeditor.feature.feature.group</featureId>
+      <featureId>org.eclipse.jst.webpageeditor.feature.feature.group</featureId>
+      <featureId>org.eclipse.jst.web_ui.feature.feature.group</featureId>
+      <featureId>org.eclipse.jst.ws.axis2tools.feature.feature.group</featureId>
+      <featureId>org.eclipse.jst.ws.axis2tools.feature.feature.group</featureId>
+      <featureId>org.eclipse.jst.ws.cxf.feature.feature.group</featureId>
+      <featureId>org.eclipse.jst.ws.jaxws.dom.feature.feature.group</featureId>
+      <featureId>org.eclipse.jst.ws.jaxws.feature.feature.group</featureId>
+
+      <featureId>org.eclipse.m2e.feature.feature.group</featureId>
+      <featureId>org.eclipse.m2e.logback.feature.feature.group</featureId>
+      <featureId>org.eclipse.m2e.wtp.feature.feature.group</featureId>
+      <featureId>org.eclipse.m2e.wtp.jaxrs.feature.feature.group</featureId>
+      <featureId>org.eclipse.m2e.wtp.jpa.feature.feature.group</featureId>
+      <featureId>org.eclipse.m2e.wtp.jsf.feature.feature.group</featureId>
+
+      <featureId>org.eclipse.mylyn.bugzilla_feature.feature.group</featureId>
+      <featureId>org.eclipse.mylyn.context_feature.feature.group</featureId>
+      <featureId>org.eclipse.mylyn_feature.feature.group</featureId>
+      <featureId>org.eclipse.mylyn.ide_feature.feature.group</featureId>
+      <featureId>org.eclipse.mylyn.java_feature.feature.group</featureId>
+      <featureId>org.eclipse.mylyn.wikitext_feature.feature.group</featureId>
+
+      <featureId>org.eclipse.pde.feature.group</featureId>
+
+      <featureId>org.eclipse.recommenders.mylyn.rcp.feature.feature.group</featureId>
+      <featureId>org.eclipse.recommenders.rcp.feature.feature.group</featureId>
+
+      <featureId>org.eclipse.rse.feature.group</featureId>
+      <featureId>org.eclipse.rse.useractions.feature.group</featureId>
+      <featureId>org.eclipse.tm.terminal.feature.feature.group</featureId>
+
+      <featureId>org.eclipse.wst.common.fproj.feature.group</featureId>
+      <featureId>org.eclipse.wst.jsdt.feature.feature.group</featureId>
+      <featureId>org.eclipse.wst.server_adapters.feature.feature.group</featureId>
+      <featureId>org.eclipse.wst.web_ui.feature.feature.group</featureId>
+      <featureId>org.eclipse.wst.xml_ui.feature.feature.group</featureId>
+      <featureId>org.eclipse.wst.xsl.feature.feature.group</featureId>
+
     </plugin>
 
     <!-- package.php -->
     <plugin>
       <name>package.php</name>
       <updateSite>http://download.eclipse.org/releases/neon/</updateSite>
-      <featureId>epp.package.php</featureId>
+      <featureId>epp.package.php.feature.group</featureId>
+      <featureId>org.eclipse.php.mylyn.feature.group</featureId>
+      <featureId>org.eclipse.php.feature.group</featureId>
+      <featureId>org.eclipse.wst.jsdt.feature.feature.group</featureId>
+      <featureId>org.eclipse.wst.xml_ui.feature.feature.group</featureId>
     </plugin>
+
     <plugin>
       <name>ZendPHPDebugger</name>
       <!-- http://blog.gbinghan.com/2011/08/eclipse-zend-pdt-installation-error.html -->
