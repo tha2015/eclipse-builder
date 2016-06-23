@@ -2,12 +2,12 @@
 <eclipse>
   <workDir>/tmp</workDir>
   <profile>SDKProfile</profile>
-  <url>http://download.eclipse.org/eclipse/downloads/drops4/R-4.5.2-201602121500/eclipse-SDK-4.5.2-win32-x86_64.zip</url>
+  <url>http://download.eclipse.org/eclipse/downloads/drops4/R-4.6-201606061100/eclipse-SDK-4.6-win32-x86_64.zip</url>
   <plugins>
     <plugin>
       <name>Groovy</name>
       <embeded>true</embeded>
-      <updateSite>http://dist.springsource.org/snapshot/GRECLIPSE/e4.5/</updateSite>
+      <updateSite>http://dist.springsource.org/snapshot/GRECLIPSE/e4.6/</updateSite>
       <featureId>org.codehaus.groovy.eclipse.feature.feature.group</featureId>
       <featureId>org.codehaus.groovy18.feature.feature.group</featureId>
       <featureId>org.codehaus.groovy20.feature.feature.group</featureId>
@@ -19,20 +19,20 @@
     </plugin>
     <plugin>
       <name>m2e</name>
-      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
+      <updateSite>http://download.eclipse.org/releases/neon/</updateSite>
       <featureId>org.eclipse.m2e.feature.feature.group</featureId>
     </plugin>
     <plugin>
       <name>m2e-wtp</name>
-      <updateSite>http://download.eclipse.org/m2e-wtp/releases/mars/</updateSite>
-      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
+      <updateSite>http://download.eclipse.org/m2e-wtp/releases/</updateSite>
+      <updateSite>http://download.eclipse.org/releases/neon/</updateSite>
       <featureId>org.eclipse.m2e.wtp.feature.feature.group</featureId>
     </plugin>
 
     <plugin>
       <name>AJDT</name>
       <embeded>true</embeded>
-      <updateSite>http://download.eclipse.org/tools/ajdt/45/dev/update</updateSite>
+      <updateSite>http://download.eclipse.org/tools/ajdt/46/dev/update</updateSite>
       <featureId>org.eclipse.ajdt.feature.group</featureId>
       <!--osgi.framework.extensions=reference\:file\:org.eclipse.equinox.weaving.hook_1.0.100.HEAD.jar -->
     </plugin>
@@ -40,26 +40,26 @@
     <!-- zest -->
     <plugin>
       <name>Zest</name>
-      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
+      <updateSite>http://download.eclipse.org/releases/neon/</updateSite>
       <featureId>org.eclipse.zest.feature.group</featureId>
     </plugin>
 
     <!-- MarketplaceClient -->
     <plugin>
       <name>MarketplaceClient</name>
-      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
+      <updateSite>http://download.eclipse.org/releases/neon/</updateSite>
       <featureId>org.eclipse.epp.mpc.feature.group</featureId>
     </plugin>
 
     <!-- package.rcp -->
     <plugin>
       <name>package.rcp</name>
-      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
+      <updateSite>http://download.eclipse.org/releases/neon/</updateSite>
       <featureId>epp.package.rcp</featureId>
     </plugin>
     <plugin>
       <name>e4tools</name>
-      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
+      <updateSite>http://download.eclipse.org/releases/neon/</updateSite>
       <featureId>org.eclipse.e4.core.tools.feature.source.feature.group</featureId>
       <updateSite>http://dl.bintray.com/vogellacompany/e4tools</updateSite>
       <featureId>org.eclipse.e4.tools.spies.feature.feature.group</featureId>
@@ -68,14 +68,14 @@
     <!-- package.jee -->
     <plugin>
       <name>package.jee</name>
-      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
+      <updateSite>http://download.eclipse.org/releases/neon/</updateSite>
       <featureId>epp.package.jee</featureId>
     </plugin>
 
     <!-- package.php -->
     <plugin>
       <name>package.php</name>
-      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
+      <updateSite>http://download.eclipse.org/releases/neon/</updateSite>
       <featureId>epp.package.php</featureId>
     </plugin>
     <plugin>
@@ -88,7 +88,7 @@
     <!-- package.cpp -->
     <plugin>
       <name>package.cpp</name>
-      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
+      <updateSite>http://download.eclipse.org/releases/neon/</updateSite>
       <featureId>epp.package.cpp</featureId>
     </plugin>
     <plugin>
@@ -102,7 +102,7 @@
     <plugin>
       <name>Android</name>
       <url>http://dl.google.com/android/android-sdk_r24.3.3-windows.zip</url>
-      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
+      <updateSite>http://download.eclipse.org/releases/neon/</updateSite>
       <featureId>com.android.ide.eclipse.ddms.feature.feature.group</featureId>
       <featureId>com.android.ide.eclipse.adt.feature.feature.group</featureId>
       <featureId>com.android.ide.eclipse.hierarchyviewer.feature.feature.group</featureId>
@@ -110,7 +110,7 @@
     </plugin>
     <plugin>
       <name>AndroidSource</name>
-      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
+      <updateSite>http://download.eclipse.org/releases/neon/</updateSite>
       <updateSite>http://adt-addons.googlecode.com/svn/trunk/source/com.android.ide.eclipse.source.update/</updateSite>
       <featureId>com.android.ide.eclipse.source.feature.group</featureId>
     </plugin>
@@ -118,7 +118,7 @@
     <!-- ARM Development Studio 5 Community Edition for Eclipse version 3.7 (Indigo) 32-bit-->
     <plugin>
       <name>ARMDevStudio5</name>
-      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
+      <updateSite>http://download.eclipse.org/releases/neon/</updateSite>
       <updateSite>http://tools.arm.com/eclipse/</updateSite>
       <featureId>com.arm.ds.community.feature.feature.group</featureId>
     </plugin>
@@ -127,7 +127,7 @@
     <plugin>
       <name>Subclipse</name>
       <updateSite>http://subclipse.tigris.org/update_1.10.x</updateSite>
-      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
+      <updateSite>http://download.eclipse.org/releases/neon/</updateSite>
       <featureId>org.tigris.subversion.subclipse.feature.group</featureId>
       <featureId>org.tigris.subversion.clientadapter.feature.feature.group</featureId>
       <featureId>org.tigris.subversion.clientadapter.javahl.feature.feature.group</featureId>
@@ -137,13 +137,13 @@
     </plugin>
     <plugin>
       <name>egit</name>
-      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
+      <updateSite>http://download.eclipse.org/releases/neon/</updateSite>
       <featureId>org.eclipse.egit.feature.group</featureId>
       <featureId>org.eclipse.egit.mylyn.feature.group</featureId>
     </plugin>
     <plugin>
       <name>emfforms</name>
-      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
+      <updateSite>http://download.eclipse.org/releases/neon/</updateSite>
       <featureId>org.eclipse.emf.ecp.emfforms.sdk.feature.feature.group</featureId>
     </plugin>
     <plugin>
@@ -270,9 +270,9 @@
     </plugin>
     <plugin>
       <name>Spring</name>
-      <url>http://download.springsource.com/release/TOOLS/update/3.7.3.RELEASE/e4.5/springsource-tool-suite-3.7.3.RELEASE-e4.5.2-updatesite.zip</url>
-      <updateSite>http://dist.springsource.com/release/TOOLS/update/e4.5/</updateSite>
-      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
+      <url>http://download.springsource.com/release/TOOLS/update/3.7.3.RELEASE/e4.6/springsource-tool-suite-3.7.3.RELEASE-e4.6-updatesite.zip</url>
+      <updateSite>http://dist.springsource.com/release/TOOLS/update/e4.6/</updateSite>
+      <updateSite>http://download.eclipse.org/releases/neon/</updateSite>
       <featureId>org.springframework.ide.eclipse.feature.feature.group</featureId>
     </plugin>
     <plugin>
@@ -282,27 +282,27 @@
     </plugin>
     <plugin>
       <name>Hibernate</name>
-      <updateSite>http://download.jboss.org/jbosstools/updates/stable/mars/</updateSite>
-      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
+      <updateSite>http://download.jboss.org/jbosstools/updates/stable/neon/</updateSite>
+      <updateSite>http://download.eclipse.org/releases/neon/</updateSite>
       <featureId>org.hibernate.eclipse.feature.feature.group</featureId>
     </plugin>
     <plugin>
       <name>Hibernate_Struts</name>
-      <updateSite>http://download.jboss.org/jbosstools/updates/stable/mars/</updateSite>
-      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
+      <updateSite>http://download.jboss.org/jbosstools/updates/stable/neon/</updateSite>
+      <updateSite>http://download.eclipse.org/releases/neon/</updateSite>
       <featureId>org.hibernate.eclipse.feature.feature.group</featureId>
       <featureId>org.jboss.tools.struts.feature.feature.group</featureId>
     </plugin>
     <plugin>
       <name>FreeMarker</name>
-      <updateSite>http://download.jboss.org/jbosstools/updates/stable/mars/</updateSite>
-      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
+      <updateSite>http://download.jboss.org/jbosstools/updates/stable/neon/</updateSite>
+      <updateSite>http://download.eclipse.org/releases/neon/</updateSite>
       <featureId>org.jboss.ide.eclipse.freemarker.feature.feature.group</featureId>
     </plugin>
     <plugin>
       <name>JAXRS</name>
-      <updateSite>http://download.jboss.org/jbosstools/updates/stable/mars/</updateSite>
-      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
+      <updateSite>http://download.jboss.org/jbosstools/updates/stable/neon/</updateSite>
+      <updateSite>http://download.eclipse.org/releases/neon/</updateSite>
       <featureId>org.jboss.tools.ws.jaxrs.feature.feature.group</featureId>
     </plugin>
 
@@ -315,21 +315,21 @@
     </plugin>
     <plugin>
       <name>OracleServers</name>
-      <updateSite>http://download.oracle.com/otn_software/oepe/12.1.3.6/mars/repository/</updateSite>
-      <updateSite>http://download.oracle.com/otn_software/oepe/12.1.3.6/mars/repository/dependencies/</updateSite>
+      <updateSite>http://download.oracle.com/otn_software/oepe/12.2.1.3/neon/repository/</updateSite>
+      <updateSite>http://download.oracle.com/otn_software/oepe/12.2.1.3/neon/repository/dependencies/</updateSite>
 <!--      <updateSite>http://download.oracle.com/otn_software/oepe/library/eclipse-4.5.2</updateSite>
       <updateSite>http://download.oracle.com/otn_software/oepe/library/eclipse-mars-sr2</updateSite>
 -->
       <!-- Available url -->
-      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
+      <updateSite>http://download.eclipse.org/releases/neon/</updateSite>
       <!-- Glassfish and WebLogic -->
-      <featureId>oracle.eclipse.tools.glassfish.feature.group</featureId>
+      <!-- <featureId>oracle.eclipse.tools.glassfish.feature.group</featureId>  -->
       <featureId>oracle.eclipse.tools.weblogic.feature.group</featureId>
 
     </plugin>
     <plugin>
       <name>Mylyn</name>
-      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
+      <updateSite>http://download.eclipse.org/releases/neon/</updateSite>
       <updateSite>http://download.eclipse.org/mylyn/releases/latest</updateSite>
       <featureId>org.eclipse.mylyn.bugzilla_feature.feature.group</featureId>
       <featureId>org.eclipse.mylyn.context_feature.feature.group</featureId>
@@ -341,20 +341,20 @@
     </plugin>
     <plugin>
       <name>MylynGerrit</name>
-      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
+      <updateSite>http://download.eclipse.org/releases/neon/</updateSite>
       <updateSite>http://download.eclipse.org/mylyn/releases/latest</updateSite>
       <featureId>org.eclipse.mylyn.gerrit.feature.feature.group</featureId>
       <featureId>org.eclipse.mylyn.gerrit.dashboard.feature.feature.group</featureId>
     </plugin>
     <plugin>
       <name>MylynGit</name>
-      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
+      <updateSite>http://download.eclipse.org/releases/neon/</updateSite>
       <updateSite>http://download.eclipse.org/mylyn/releases/latest</updateSite>
       <featureId>org.eclipse.mylyn.git.feature.group</featureId>
     </plugin>
     <plugin>
       <name>MylynJenkins</name>
-      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
+      <updateSite>http://download.eclipse.org/releases/neon/</updateSite>
       <updateSite>http://download.eclipse.org/mylyn/releases/latest</updateSite>
       <featureId>org.eclipse.mylyn.hudson.feature.group</featureId>
     </plugin>
@@ -363,7 +363,7 @@
     <plugin>
       <name>JIRA</name>
       <updateSite>http://update.atlassian.com/atlassian-eclipse-plugin/e3.7</updateSite>
-      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
+      <updateSite>http://download.eclipse.org/releases/neon/</updateSite>
       <updateSite>http://download.eclipse.org/mylyn/releases/latest</updateSite>
       <featureId>com.atlassian.connector.eclipse.jira.feature.group</featureId>
     </plugin>
@@ -376,7 +376,7 @@
 
     <plugin>
       <name>Terminal</name>
-      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
+      <updateSite>http://download.eclipse.org/releases/neon/</updateSite>
       <featureId>org.eclipse.rse.feature.group</featureId>
       <featureId>org.eclipse.rse.useractions.feature.group</featureId>
       <featureId>org.eclipse.tm.terminal.feature.group</featureId>
@@ -405,9 +405,9 @@
 
     <plugin>
       <name>GoogleAppEngine</name>
-      <updateSite>https://dl.google.com/eclipse/plugin/4.4</updateSite>
-      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
-      <updateSite>http://download.eclipse.org/m2e-wtp/releases/mars/</updateSite>
+      <updateSite>https://dl.google.com/eclipse/plugin/4.5</updateSite>
+      <updateSite>http://download.eclipse.org/releases/neon/</updateSite>
+      <updateSite>http://download.eclipse.org/m2e-wtp/releases/neon/</updateSite>
       <featureId>com.google.appengine.eclipse.wtp.maven.feature.feature.group</featureId>
       <featureId>com.google.gdt.eclipse.suite.e44.feature.feature.group</featureId>
       <featureId>com.google.appengine.eclipse.sdkbundle.feature.feature.group</featureId>
@@ -419,17 +419,11 @@
       <featureId>org.datanucleus.ide.eclipse.feature.feature.group</featureId>
     </plugin>
 
-    <plugin>
-      <name>WordWrap</name>
-      <updateSite>http://dev.cdhq.de/eclipse/updatesite/mars/</updateSite>
-      <featureId>de.cdhq.eclipse.linenumberfix.mars.feature.feature.group</featureId>
-      <featureId>de.cdhq.eclipse.wordwrap.feature.feature.group</featureId>
-    </plugin>
 
     <plugin>
       <name>Gradle</name>
       <updateSite>http://dist.springsource.com/release/TOOLS/gradle</updateSite>
-      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
+      <updateSite>http://download.eclipse.org/releases/neon/</updateSite>
       <featureId>org.springsource.ide.eclipse.gradle.feature.feature.group</featureId>
     </plugin>
 
@@ -456,7 +450,7 @@
     <plugin><!--  for HotSpot VM only, target JVM must be started with  -XX:+UnlockCommercialFeatures -XX:+FlightRecorder -->
       <name>JavaMC4HotSpotVM</name>
       <url>http://download.oracle.com/technology/products/missioncontrol/updatesites/jmc-updatesite-5.5.0.zip</url>
-      <updateSite>http://download.eclipse.org/releases/mars/</updateSite>
+      <updateSite>http://download.eclipse.org/releases/neon/</updateSite>
       <featureId>com.jrockit.mc.feature.ide.feature.group</featureId>
     </plugin>
 
