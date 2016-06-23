@@ -90,10 +90,11 @@
     <plugin>
       <name>Android</name>
     </plugin>
- -->
+
      <plugin>
       <name>MylynGerrit</name>
     </plugin>
+ -->
      <plugin>
       <name>MylynGit</name>
     </plugin>
