@@ -90,8 +90,10 @@
       <featureId>org.eclipse.swtbot.eclipse.gef.feature.group</featureId>
       <featureId>org.eclipse.swtbot.eclipse.feature.group</featureId>
       <featureId>org.eclipse.swtbot.ide.feature.group</featureId>
+      <!--
       <featureId>org.eclipse.wb.core.ui.feature.feature.group</featureId>
       <featureId>org.eclipse.wb.rcp.feature.feature.group</featureId>
+      -->
       <featureId>org.eclipse.wst.xml_ui.feature.feature.group</featureId>
     </plugin>
     <plugin>
