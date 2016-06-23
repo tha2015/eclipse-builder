@@ -98,10 +98,11 @@
      <plugin>
       <name>MylynGit</name>
     </plugin>
-     <plugin>
+<!--
+    <plugin>
       <name>MylynJenkins</name>
     </plugin>
-
+ -->
 
     <!-- Java agent plugin should be the last -->
     <plugin>
