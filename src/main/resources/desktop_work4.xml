@@ -42,9 +42,6 @@
       <name>StartExplorer</name>
     </plugin>
     <plugin>
-      <name>Terminal4</name>
-    </plugin>
-    <plugin>
       <name>JavaSourceAttacher</name>
     </plugin>
     <plugin>

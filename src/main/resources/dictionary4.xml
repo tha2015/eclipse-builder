@@ -516,11 +516,6 @@
       <featureId>org.eclipse.tm.terminal.telnet.feature.group</featureId>
       <featureId>org.eclipse.tm.terminal.view.feature.group</featureId>
     </plugin>
-    <plugin>
-      <name>Terminal4</name>
-      <updateSite>http://download.eclipse.org/tm/terminal/marketplace/</updateSite>
-      <featureId>org.eclipse.tm.terminal.feature.feature.group</featureId>
-    </plugin>
 
     <plugin>
       <name>BytecodeOutline</name>
