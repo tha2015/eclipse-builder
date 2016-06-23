@@ -90,7 +90,16 @@
       <name>package.cpp</name>
       <updateSite>http://download.eclipse.org/releases/neon/</updateSite>
       <featureId>epp.package.cpp</featureId>
+      <featureId>org.eclipse.cdt.feature.group</featureId>
+      <featureId>org.eclipse.cdt.autotools.feature.group</featureId>
+      <featureId>org.eclipse.cdt.build.crossgcc.feature.group</featureId>
+      <featureId>org.eclipse.cdt.debug.standalone.feature.group</featureId>
+      <featureId>org.eclipse.cdt.debug.ui.memory.feature.group</featureId>
+      <featureId>org.eclipse.cdt.launch.remote.feature.group</featureId>
+      <featureId>org.eclipse.cdt.msw.feature.group</featureId>
+      <featureId>org.eclipse.cdt.mylyn.feature.group</featureId>
     </plugin>
+
     <plugin>
       <name>cmakeed</name>
       <updateSite>http://master.dl.sourceforge.net/project/cmakeed/eclipse/site.xml</updateSite>
