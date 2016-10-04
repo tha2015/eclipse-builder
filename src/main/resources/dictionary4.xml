@@ -65,7 +65,8 @@
       <featureId>org.eclipse.platform.source.feature.group</featureId>
       <featureId>org.eclipse.rcp.source.feature.group</featureId>
 
-      <featureId>org.eclipse.buildship.feature.group</featureId>
+      <!-- <featureId>org.eclipse.buildship.feature.group</featureId> -->
+
       <featureId>org.eclipse.e4.core.tools.feature.feature.group</featureId>
       <!-- not available in Neon on 2016-02-21
       <featureId>org.eclipse.egit.import"/>
