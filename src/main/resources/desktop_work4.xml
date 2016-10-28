@@ -15,7 +15,9 @@
     <plugin>
       <name>package.rcp</name>
     </plugin>
-
+    <plugin>
+      <name>egerrit</name>
+    </plugin>
 
     <plugin>
       <name>Spring</name>

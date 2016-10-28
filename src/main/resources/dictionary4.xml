@@ -275,6 +275,12 @@
       <featureId>org.eclipse.egit.mylyn.feature.group</featureId>
     </plugin>
     <plugin>
+      <name>egerrit</name>
+      <updateSite>http://download.eclipse.org/egerrit/updates/release/</updateSite>
+      <featureId>org.eclipse.egerrit.feature.feature.group</featureId>
+    </plugin>
+
+    <plugin>
       <name>emfforms</name>
       <updateSite>http://download.eclipse.org/releases/neon/</updateSite>
       <featureId>org.eclipse.emf.ecp.emfforms.sdk.feature.feature.group</featureId>
