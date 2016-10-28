@@ -67,9 +67,11 @@
     <plugin>
       <name>FindBugs</name>
     </plugin>
+    <!--
     <plugin>
       <name>Checkstyle</name>
     </plugin>
+    -->
     <plugin>
       <name>Zest</name>
     </plugin>

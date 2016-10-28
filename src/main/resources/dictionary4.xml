@@ -55,6 +55,8 @@
     <plugin>
       <name>package.rcp</name>
       <updateSite>http://download.eclipse.org/releases/neon/</updateSite>
+      <updateSite>http://download.eclipse.org/mylyn/releases/latest</updateSite>
+
 
       <!-- https://git.eclipse.org/r/#/c/67008/2/packages/org.eclipse.epp.package.rcp.product/epp.product -->
 
@@ -109,6 +111,7 @@
     <plugin>
       <name>package.jee</name>
       <updateSite>http://download.eclipse.org/releases/neon/</updateSite>
+      <updateSite>http://download.eclipse.org/mylyn/releases/latest</updateSite>
 
       <!-- https://git.eclipse.org/r/#/c/67004/3/packages/org.eclipse.epp.package.jee.product/epp.product  -->
       <!--  https://bugs.eclipse.org/bugs/show_bug.cgi?id=332989#c19 -->
