@@ -24,7 +24,7 @@
     </plugin>
     <plugin>
       <name>m2e-wtp</name>
-      <updateSite>http://download.eclipse.org/m2e-wtp/releases/</updateSite>
+      <updateSite>http://download.eclipse.org/m2e-wtp/releases/neon/</updateSite>
       <updateSite>http://download.eclipse.org/releases/neon/</updateSite>
       <featureId>org.eclipse.m2e.wtp.feature.feature.group</featureId>
     </plugin>
