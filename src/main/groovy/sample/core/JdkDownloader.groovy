@@ -109,14 +109,21 @@ class JdkDownloader {
 
     private void unzipjdk(File tmpDir, File file7zexe, File jdkFilePath, File jdkDir) {
         def ant = new AntBuilder()
-        ant.mkdir (dir: jdkDir)
+        ant.mkdir (dir: "${jdkDir}/tmp")
         ant.exec(executable: file7zexe) {
             arg (line: "e -y")
-            arg (value: "-o${jdkDir}")
+            arg (value: "-o${jdkDir}/tmp")
             arg (value: jdkFilePath)
         }
-        ant.unzip(src: new File(jdkDir, 'tools.zip'), dest: jdkDir)
-        ant.delete (file: new File(jdkDir, 'tools.zip'))
+        if (new File("${jdkDir}/tmp/111").exists()) {
+			ant.exec(executable: file7zexe) {
+				arg (line: "e -y")
+				arg (value: "-o${jdkDir}/tmp")
+				arg (value: "${jdkDir}/tmp/111")
+			}
+        }
+        ant.unzip(src: "${jdkDir}/tmp/tools.zip", dest: jdkDir)
+        ant.delete (dir: "${jdkDir}/tmp")
         jdkDir.eachDirRecurse() { dir ->
             dir.eachFileMatch(~/.*.pack/) { file ->
                 String[] tokens = file.name.split("\\.(?=[^\\.]+\$)")
