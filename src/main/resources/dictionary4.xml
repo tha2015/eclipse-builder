@@ -412,7 +412,7 @@
     </plugin>
     <plugin>
       <name>Spring</name>
-      <url>http://download.springsource.com/release/TOOLS/update/3.8.2.RELEASE/e4.6/springsource-tool-suite-3.8.2.RELEASE-e4.6.1-updatesite.zip</url>
+      <url>http://download.springsource.com/release/TOOLS/update/3.8.3.RELEASE/e4.6/springsource-tool-suite-3.8.3.RELEASE-e4.6.2-updatesite.zip</url>
       <updateSite>http://dist.springsource.com/release/TOOLS/update/e4.6/</updateSite>
       <updateSite>http://download.eclipse.org/releases/neon/</updateSite>
       <featureId>org.springframework.ide.eclipse.feature.feature.group</featureId>
