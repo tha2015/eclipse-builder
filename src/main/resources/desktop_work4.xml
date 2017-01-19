@@ -35,9 +35,6 @@
     </plugin>
 
     <plugin>
-      <name>Subclipse</name>
-    </plugin>
-    <plugin>
       <name>AnyEditTools</name>
     </plugin>
     <plugin>
@@ -72,12 +69,7 @@
       <name>Checkstyle</name>
     </plugin>
     -->
-    <plugin>
-      <name>Zest</name>
-    </plugin>
-    <plugin>
-      <name>ClassDependencyViewer</name>
-    </plugin>
+
     <plugin>
       <name>JavaMC4HotSpotVM</name>
     </plugin>
