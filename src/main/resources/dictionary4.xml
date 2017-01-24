@@ -559,7 +559,7 @@
 
     <plugin>
       <name>Gradle</name>
-      <updateSite>http://download.eclipse.org/buildship/updates/e46/releases/1.0</updateSite>
+      <updateSite>http://download.eclipse.org/buildship/updates/e46/releases/2.x</updateSite>
       <updateSite>http://download.eclipse.org/releases/neon/</updateSite>
       <featureId>org.eclipse.buildship.feature.group</featureId>
     </plugin>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <eclipse>
   <workDir>/Users/tha/tmp</workDir>
-  <url>http://download.eclipse.org/eclipse/downloads/drops4/R-4.6.1-201609071200/eclipse-SDK-4.6.1-macosx-cocoa-x86_64.tar.gz</url>
+  <url>http://download.eclipse.org/eclipse/downloads/drops4/R-4.6.2-201611241400/eclipse-SDK-4.6.2-macosx-cocoa-x86_64.tar.gz</url>
   <dictionary>/dictionary4.xml</dictionary>
   <plugins>
     <plugin>
@@ -34,18 +34,7 @@
     <plugin>
       <name>Optimizer</name>
     </plugin>
-<!--
-     <plugin>
-      <name>Android</name>
-    </plugin>
 
-    <plugin>
-      <name>GoogleAppEngine</name>
-    </plugin>
- -->
-    <plugin>
-      <name>Subclipse</name>
-    </plugin>
     <plugin>
       <name>AnyEditTools</name>
     </plugin>
@@ -59,9 +48,7 @@
     <plugin>
       <name>JavaExamplesSearch</name>
     </plugin>
-    <plugin>
-      <name>Zest</name>
-    </plugin>
+
     <plugin>
       <name>ClassDependencyViewer</name>
     </plugin>
@@ -73,13 +60,6 @@
     </plugin>
     <plugin>
       <name>Checkstyle</name>
-    </plugin>
-
-    <plugin>
-      <name>Zest</name>
-    </plugin>
-    <plugin>
-      <name>ClassDependencyViewer</name>
     </plugin>
 
 
