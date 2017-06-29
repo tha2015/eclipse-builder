@@ -13,6 +13,7 @@ import org.apache.commons.io.filefilter.FalseFileFilter
 import org.apache.commons.io.filefilter.NameFileFilter
 import org.apache.commons.io.filefilter.TrueFileFilter
 import org.apache.commons.io.filefilter.WildcardFileFilter
+import org.apache.tools.ant.taskdefs.optional.clearcase.CCMkdir
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 import org.apache.commons.codec.binary.Hex;
@@ -100,12 +101,22 @@ class EclipseDropInsBuilder {
 					byte[] bytes = new byte[2]
 					fin.read(bytes)
 					fin.close()
-
 					if (bytes[0] == 0x50 && bytes[1] == 0x4b) {
 						// 'PK' : zip
-						ant.unzip (dest: new File(workDir, zipFileNameNoExt), overwrite:"false") { fileset(dir: workDir){ include (name: zipFileName) } }
-					} else {
-						ant.untar(dest:new File(workDir, zipFileNameNoExt), compression:"gzip", overwrite:"false") { fileset(dir: workDir){ include (name: zipFileName) } }
+						ant.echo (message: 'unzipping .zip file')
+						ant.unzip (dest: unzippedDir, overwrite:"false") { fileset(dir: workDir){ include (name: zipFileName) } }
+					} else if (bytes[0] == 0x1F && bytes[1] == 0x8B) {
+						// tar.gz
+						ant.echo (message: 'unzipping .tar.gz file')
+						ant.untar(dest: unzippedDir, compression:"gzip", overwrite:"false") { fileset(dir: workDir){ include (name: zipFileName) } }
+					} else if (bytes[0] == 0x78 && bytes[1] == 0xDA || zipFileName.endsWith(".dmg")) {
+						// dmg
+						ant.echo (message: 'unzipping .dmg file')
+						ant.mkdir(dir: unzippedDir)
+						ant.exec(executable:"hdiutil") {
+							arg (line: "attach " + new File(workDir, zipFileName).getAbsolutePath())
+						}
+						ant.copy(todir: unzippedDir) {fileset(dir: '/Volumes/Eclipse', excludes:"Applications **/Applications/**/*")}
 					}
 				} catch (Exception e) {
 					ant.delete(file: new File(workDir, zipFileName))
