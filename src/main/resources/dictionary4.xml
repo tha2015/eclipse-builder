@@ -179,7 +179,7 @@
 
       <featureId>org.eclipse.cft.server.core.feature.feature.group</featureId>
       <featureId>org.eclipse.cft.server.ui.feature.feature.group</featureId>
-      
+
       <featureId>org.eclipse.rse.feature.group</featureId>
       <featureId>org.eclipse.rse.useractions.feature.group</featureId>
       <featureId>org.eclipse.tm.terminal.feature.feature.group</featureId>
@@ -457,8 +457,8 @@
     </plugin>
     <plugin>
       <name>OracleServers</name>
-      <updateSite>http://download.oracle.com/otn_software/oepe/12.2.1.3/oxygen/repository/</updateSite>
-      <updateSite>http://download.oracle.com/otn_software/oepe/12.2.1.3/oxygen/repository/dependencies/</updateSite>
+      <updateSite>http://download.oracle.com/otn_software/oepe/12.2.1.5/neon/repository/</updateSite>
+      <updateSite>http://download.oracle.com/otn_software/oepe/12.2.1.5/neon/repository/dependencies/</updateSite>
 <!--      <updateSite>http://download.oracle.com/otn_software/oepe/library/eclipse-4.5.2</updateSite>
       <updateSite>http://download.oracle.com/otn_software/oepe/library/eclipse-mars-sr2</updateSite>
 -->
@@ -504,7 +504,7 @@
 
     <plugin>
       <name>JIRA</name>
-      <updateSite>http://update.atlassian.com/atlassian-eclipse-plugin/e3.8</updateSite>
+      <updateSite>http://update.atlassian.com/atlassian-eclipse-plugin/rest/e3.7</updateSite>
       <updateSite>http://download.eclipse.org/releases/oxygen/</updateSite>
       <updateSite>http://download.eclipse.org/mylyn/releases/latest</updateSite>
       <featureId>com.atlassian.connector.eclipse.jira.feature.group</featureId>
@@ -535,7 +535,7 @@
 
     <plugin>
       <name>EclipseCodeRecommenders</name>
-      <updateSite>http://download.eclipse.org/recommenders/updates/dev/e37</updateSite>
+      <updateSite>http://download.eclipse.org/recommenders/updates/stable/</updateSite>
       <featureId>org.eclipse.recommenders.feature.completion.rcp.intellig.e37.feature.group</featureId>
     </plugin>
 
