@@ -458,8 +458,8 @@
     </plugin>
     <plugin>
       <name>OracleServers</name>
-      <updateSite>http://download.oracle.com/otn_software/oepe/12.2.1.5/neon/repository/</updateSite>
-      <updateSite>http://download.oracle.com/otn_software/oepe/12.2.1.5/neon/repository/dependencies/</updateSite>
+      <updateSite>http://download.oracle.com/otn_software/oepe/12.2.1.5/oxygen/repository/</updateSite>
+      <updateSite>http://download.oracle.com/otn_software/oepe/12.2.1.5/oxygen/repository/dependencies/</updateSite>
 <!--      <updateSite>http://download.oracle.com/otn_software/oepe/library/eclipse-4.5.2</updateSite>
       <updateSite>http://download.oracle.com/otn_software/oepe/library/eclipse-mars-sr2</updateSite>
 -->
