@@ -8,6 +8,7 @@
     <plugin>
       <name>package.jee</name>
     </plugin>
+<!--
     <plugin>
       <name>package.cpp</name>
     </plugin>
@@ -18,7 +19,7 @@
     <plugin>
       <name>egerrit</name>
     </plugin>
-
+ -->
     <plugin>
       <name>Spring</name>
     </plugin>
@@ -71,11 +72,12 @@
     <plugin>
       <name>Checkstyle</name>
     </plugin>
-    -->
+
 
     <plugin>
       <name>JavaMC4HotSpotVM</name>
     </plugin>
+-->
     <plugin>
       <name>TestNG</name>
     </plugin>
@@ -90,10 +92,11 @@
     <plugin>
       <name>Android</name>
     </plugin>
--->
+
      <plugin>
       <name>MylynGerrit</name>
     </plugin>
+-->
     <plugin>
       <name>MylynGit</name>
     </plugin>
