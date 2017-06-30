@@ -317,7 +317,7 @@
     </plugin>
     <plugin>
       <name>FindBugs</name>
-      <updateSite>http://findbugs.cs.umd.edu/eclipse</updateSite>
+      <updateSite>http://andrei.gmxhome.de/eclipse/</updateSite>
       <featureId>edu.umd.cs.findbugs.plugin.eclipse.feature.group</featureId>
     </plugin>
     <plugin>
@@ -369,7 +369,8 @@
     </plugin>
     <plugin>
       <name>FileSync</name>
-      <url>http://filesync4eclipse.eclipselabs.org.codespot.com/files/de.loskutov.FileSync_1.3.8.201104160944.jar</url>
+      <updateSite>http://andrei.gmxhome.de/eclipse/</updateSite>
+      <featureId>FileSync.feature.group</featureId>
     </plugin>
     <plugin>
       <name>JavaHexEditor</name>
