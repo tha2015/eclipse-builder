@@ -53,13 +53,7 @@
       <name>ClassDependencyViewer</name>
     </plugin>
     <plugin>
-      <name>FileSync</name>
-    </plugin>
-    <plugin>
-      <name>FindBugs</name>
-    </plugin>
-    <plugin>
-      <name>Checkstyle</name>
+      <name>Kotlin</name>
     </plugin>
 
 

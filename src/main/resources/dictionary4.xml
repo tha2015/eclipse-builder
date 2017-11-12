@@ -624,5 +624,12 @@
       <updateSite>http://update.zeroturnaround.com/free-tools/site/</updateSite>
       <featureId>com.zeroturnaround.eclipse.optimizer.feature.feature.group</featureId>
     </plugin>
+
+    <plugin>
+      <name>Kotlin</name>
+      <updateSite>https://dl.bintray.com/jetbrains/kotlin/eclipse-plugin/last/</updateSite>
+      <updateSite>http://download.eclipse.org/releases/oxygen/</updateSite>
+      <featureId>org.jetbrains.kotlin.feature.feature.group</featureId>
+    </plugin>
   </plugins>
 </eclipse>
