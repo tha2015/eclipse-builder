@@ -13,7 +13,6 @@ import org.apache.commons.io.filefilter.FalseFileFilter
 import org.apache.commons.io.filefilter.NameFileFilter
 import org.apache.commons.io.filefilter.TrueFileFilter
 import org.apache.commons.io.filefilter.WildcardFileFilter
-import org.apache.tools.ant.taskdefs.optional.clearcase.CCMkdir
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 import org.apache.commons.codec.binary.Hex;
