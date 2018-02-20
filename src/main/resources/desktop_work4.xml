@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <eclipse>
   <workDir>T:/tmp64</workDir>
-  <jdkUrl>http://download.oracle.com/otn-pub/java/jdk/8u151-b12/e758a0de34e24606bca991d704f6dcbf/jdk-8u151-windows-x64.exe</jdkUrl>
-  <jdkSrcUrl>http://hg.openjdk.java.net/jdk8u/jdk8u/jdk/archive/774f11d707e0.zip</jdkSrcUrl>
-  <url>http://download.eclipse.org/eclipse/downloads/drops4/R-4.7.1a-201710090410/eclipse-SDK-4.7.1a-win32-x86_64.zip</url>
+  <jdkUrl>http://download.oracle.com/otn-pub/java/jdk/8u162-b12/0da788060d494f5095bf8624735fa2f1/jdk-8u162-windows-x64.exe</jdkUrl>
+  <jdkSrcUrl>http://hg.openjdk.java.net/jdk8u/jdk8u/jdk/archive/ddae5cb11d6c.zip</jdkSrcUrl>
 
   <dictionary>/dictionary4.xml</dictionary>
   <plugins>
