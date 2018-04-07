@@ -626,5 +626,13 @@
       <updateSite>http://download.eclipse.org/releases/oxygen/</updateSite>
       <featureId>org.jetbrains.kotlin.feature.feature.group</featureId>
     </plugin>
+    <plugin>
+      <name>eclemma</name>
+      <updateSite>http://update.eclemma.org/</updateSite>
+      <updateSite>http://download.eclipse.org/releases/oxygen/</updateSite>
+      <featureId>org.eclipse.eclemma.feature.feature.group</featureId>
+    </plugin>
+
+
   </plugins>
 </eclipse>
