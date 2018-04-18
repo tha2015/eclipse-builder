@@ -408,7 +408,7 @@
     </plugin>
     <plugin>
       <name>Spring</name>
-      <url>http://download.springsource.com/release/TOOLS/update/3.9.3.RELEASE/e4.7/springsource-tool-suite-3.9.3.RELEASE-e4.7.3-updatesite.zip</url>
+      <url>http://download.springsource.com/release/TOOLS/update/3.9.4.RELEASE/e4.7/springsource-tool-suite-3.9.4.RELEASE-e4.7.3a-updatesite.zip</url>
       <updateSite>http://dist.springsource.com/release/TOOLS/update/e4.7/</updateSite>
       <updateSite>http://download.eclipse.org/releases/oxygen/</updateSite>
       <featureId>org.springframework.ide.eclipse.feature.feature.group</featureId>
