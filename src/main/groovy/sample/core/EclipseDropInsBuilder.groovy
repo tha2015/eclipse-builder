@@ -100,11 +100,11 @@ class EclipseDropInsBuilder {
 					byte[] bytes = new byte[2]
 					fin.read(bytes)
 					fin.close()
-					if (bytes[0] == 0x50 && bytes[1] == 0x4b) {
+					if (bytes[0] == 0x50 && bytes[1] == 0x4b || zipFileName.endsWith(".zip")) {
 						// 'PK' : zip
 						ant.echo (message: 'unzipping .zip file')
 						ant.unzip (dest: unzippedDir, overwrite:"false") { fileset(dir: workDir){ include (name: zipFileName) } }
-					} else if (bytes[0] == 0x1F && bytes[1] == 0x8B) {
+					} else if (bytes[0] == 0x1F && bytes[1] == 0x8B || zipFileName.endsWith(".tgz") || zipFileName.endsWith(".tar.gz")) {
 						// tar.gz
 						ant.echo (message: 'unzipping .tar.gz file')
 						ant.untar(dest: unzippedDir, compression:"gzip", overwrite:"false") { fileset(dir: workDir){ include (name: zipFileName) } }
