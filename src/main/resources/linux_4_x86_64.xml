@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse>
+  <workDir>/home/tha/tmp</workDir>
+  <url>http://download.eclipse.org/eclipse/downloads/drops4/S-4.9RC2-201809060745/eclipse-SDK-4.9RC2-linux-gtk-x86_64.tar.gz</url>
+  <dictionary>/dictionary49.xml</dictionary>
+  <plugins>
+    <plugin>
+      <name>package.jee</name>
+    </plugin>
+    <!--
+    <plugin>
+      <name>package.cpp</name>
+    </plugin>
+
+    <plugin>
+      <name>package.rcp</name>
+    </plugin>
+
+
+    <plugin>
+      <name>Spring</name>
+    </plugin>
+
+    <plugin>
+      <name>Groovy</name>
+    </plugin>
+    <plugin>
+      <name>Gradle</name>
+    </plugin>
+
+    <plugin>
+      <name>m2e-wtp</name>
+    </plugin>
+
+    <plugin>
+      <name>Optimizer</name>
+    </plugin>
+
+    <plugin>
+      <name>AnyEditTools</name>
+    </plugin>
+    <plugin>
+      <name>StartExplorer</name>
+    </plugin>
+    <plugin>
+      <name>JavaSourceAttacher</name>
+    </plugin>
+
+    <plugin>
+      <name>JavaExamplesSearch</name>
+    </plugin>
+
+    <plugin>
+      <name>ClassDependencyViewer</name>
+    </plugin>
+
+-->
+
+  </plugins>
+</eclipse>

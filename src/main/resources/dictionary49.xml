@@ -1,0 +1,752 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse>
+  <workDir>/tmp</workDir>
+  <profile>SDKProfile</profile>
+  <url>http://download.eclipse.org/eclipse/downloads/drops4/S-4.9RC2-201809060745/eclipse-SDK-4.9RC2-linux-gtk-x86_64.tar.gz</url>
+  <plugins>
+    <plugin>
+      <name>Groovy</name>
+      <embeded>true</embeded>
+      <updateSite>http://dist.springsource.org/snapshot/GRECLIPSE/e4.9</updateSite>
+      <featureId>org.codehaus.groovy.eclipse.feature.feature.group</featureId>
+      <featureId>org.codehaus.groovy24.feature.feature.group</featureId>
+      <featureId>org.codehaus.groovy.jdt.patch.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>m2e</name>
+      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <featureId>org.eclipse.m2e.feature.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>m2e-wtp</name>
+      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <featureId>org.eclipse.m2e.wtp.feature.feature.group</featureId>
+    </plugin>
+
+    <plugin>
+      <name>AJDT</name>
+      <embeded>true</embeded>
+      <updateSite>http://download.eclipse.org/tools/ajdt/48/dev/update</updateSite>
+      <featureId>org.eclipse.ajdt.feature.group</featureId>
+      <!--osgi.framework.extensions=reference\:file\:org.eclipse.equinox.weaving.hook_1.0.100.HEAD.jar -->
+    </plugin>
+
+    <!-- zest -->
+    <plugin>
+      <name>Zest</name>
+      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <featureId>org.eclipse.zest.feature.group</featureId>
+    </plugin>
+
+    <!-- MarketplaceClient -->
+    <plugin>
+      <name>MarketplaceClient</name>
+      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <featureId>org.eclipse.epp.mpc.feature.group</featureId>
+    </plugin>
+
+    <!-- package.rcp -->
+    <plugin>
+      <name>package.rcp</name>
+      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <updateSite>http://download.eclipse.org/mylyn/releases/latest</updateSite>
+
+
+      <!-- https://git.eclipse.org/r/#/c/67008/2/packages/org.eclipse.epp.package.rcp.product/epp.product -->
+
+      <featureId>epp.package.rcp</featureId>
+
+      <featureId>org.eclipse.jdt.feature.group</featureId>
+      <featureId>org.eclipse.pde.feature.group</featureId>
+      <featureId>org.eclipse.platform.source.feature.group</featureId>
+      <featureId>org.eclipse.rcp.source.feature.group</featureId>
+
+      <featureId>org.eclipse.buildship.feature.group</featureId>
+
+      <featureId>org.eclipse.e4.core.tools.feature.feature.group</featureId>
+      <featureId>org.eclipse.eclemma.feature.feature.group</featureId>
+      <!-- not available in Neon on 2016-02-21
+      <featureId>org.eclipse.egit.import"/>
+      -->
+      <featureId>org.eclipse.egit.feature.group</featureId>
+      <featureId>org.eclipse.egit.mylyn.feature.group</featureId>
+      <featureId>org.eclipse.m2e.feature.feature.group</featureId>
+      <featureId>org.eclipse.m2e.logback.feature.feature.group</featureId>
+      <featureId>org.eclipse.mylyn.bugzilla_feature.feature.group</featureId>
+      <featureId>org.eclipse.mylyn.context_feature.feature.group</featureId>
+      <featureId>org.eclipse.mylyn.gerrit.feature.feature.group</featureId>
+      <featureId>org.eclipse.mylyn.git.feature.group</featureId>
+      <featureId>org.eclipse.mylyn.hudson.feature.group</featureId>
+      <featureId>org.eclipse.mylyn.ide_feature.feature.group</featureId>
+      <featureId>org.eclipse.mylyn.java_feature.feature.group</featureId>
+      <featureId>org.eclipse.mylyn.pde_feature.feature.group</featureId>
+      <featureId>org.eclipse.mylyn.wikitext_feature.feature.group</featureId>
+      <featureId>org.eclipse.rap.tools.feature.feature.group</featureId>
+      <featureId>org.eclipse.recommenders.mylyn.rcp.feature.feature.group</featureId>
+      <featureId>org.eclipse.recommenders.rcp.feature.feature.group</featureId>
+      <featureId>org.eclipse.recommenders.snipmatch.rcp.feature.feature.group</featureId>
+      <featureId>org.eclipse.swtbot.eclipse.gef.feature.group</featureId>
+      <featureId>org.eclipse.swtbot.eclipse.feature.group</featureId>
+      <featureId>org.eclipse.swtbot.ide.feature.group</featureId>
+      <featureId>org.eclipse.wst.xml_ui.feature.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>e4tools</name>
+      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <featureId>org.eclipse.e4.core.tools.feature.source.feature.group</featureId>
+      <updateSite>http://dl.bintray.com/vogellacompany/e4tools</updateSite>
+      <featureId>org.eclipse.e4.tools.spies.feature.feature.group</featureId>
+    </plugin>
+
+    <!-- package.jee -->
+    <plugin>
+      <name>package.jee</name>
+      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <updateSite>http://download.eclipse.org/mylyn/releases/latest</updateSite>
+      <updateSite>http://download.eclipse.org/webtools/downloads/drops/R3.11.0/I-3.11.0-20180910170749/repository/</updateSite>
+
+      <!-- https://git.eclipse.org/r/#/c/67004/3/packages/org.eclipse.epp.package.jee.product/epp.product  -->
+      <!--  https://bugs.eclipse.org/bugs/show_bug.cgi?id=332989#c19 -->
+<!--
+      <featureId>org.eclipse.epp.package.jee.feature.feature.group</featureId>
+      <featureId>org.eclipse.epp.package.common.feature.feature.group</featureId>
+      <featureId>org.eclipse.platform.feature.group</featureId>
+      <featureId>org.eclipse.epp.mpc.feature.group</featureId>
+-->
+      <featureId>org.eclipse.datatools.common.doc.user.feature.group</featureId>
+      <featureId>org.eclipse.datatools.connectivity.doc.user.feature.group</featureId>
+      <featureId>org.eclipse.datatools.connectivity.feature.feature.group</featureId>
+      <featureId>org.eclipse.datatools.connectivity.oda.designer.core.feature.feature.group</featureId>
+      <featureId>org.eclipse.datatools.connectivity.oda.designer.feature.feature.group</featureId>
+      <featureId>org.eclipse.datatools.connectivity.oda.feature.feature.group</featureId>
+      <featureId>org.eclipse.datatools.doc.user.feature.group</featureId>
+      <featureId>org.eclipse.datatools.enablement.apache.derby.feature.feature.group</featureId>
+      <featureId>org.eclipse.datatools.enablement.feature.feature.group</featureId>
+      <featureId>org.eclipse.datatools.enablement.hsqldb.feature.feature.group</featureId>
+      <featureId>org.eclipse.datatools.enablement.ibm.feature.feature.group</featureId>
+      <featureId>org.eclipse.datatools.enablement.ingres.feature.feature.group</featureId>
+      <featureId>org.eclipse.datatools.enablement.jdbc.feature.feature.group</featureId>
+      <featureId>org.eclipse.datatools.enablement.jdt.feature.feature.group</featureId>
+      <featureId>org.eclipse.datatools.enablement.msft.feature.feature.group</featureId>
+      <featureId>org.eclipse.datatools.enablement.mysql.feature.feature.group</featureId>
+      <featureId>org.eclipse.datatools.enablement.oda.designer.feature.feature.group</featureId>
+      <featureId>org.eclipse.datatools.enablement.oda.feature.feature.group</featureId>
+      <featureId>org.eclipse.datatools.enablement.oracle.feature.feature.group</featureId>
+      <featureId>org.eclipse.datatools.enablement.postgresql.feature.feature.group</featureId>
+      <featureId>org.eclipse.datatools.enablement.sap.feature.feature.group</featureId>
+      <featureId>org.eclipse.datatools.enablement.sdk.feature.feature.group</featureId>
+      <featureId>org.eclipse.datatools.enablement.sqlite.feature.feature.group</featureId>
+      <featureId>org.eclipse.datatools.enablement.sybase.feature.feature.group</featureId>
+      <featureId>org.eclipse.datatools.intro.feature.group</featureId>
+      <featureId>org.eclipse.datatools.modelbase.feature.feature.group</featureId>
+      <featureId>org.eclipse.datatools.sdk.feature.feature.group</featureId>
+      <featureId>org.eclipse.datatools.sqldevtools.data.feature.feature.group</featureId>
+      <featureId>org.eclipse.datatools.sqldevtools.ddl.feature.feature.group</featureId>
+      <featureId>org.eclipse.datatools.sqldevtools.ddlgen.feature.feature.group</featureId>
+      <featureId>org.eclipse.datatools.sqldevtools.feature.feature.group</featureId>
+      <featureId>org.eclipse.datatools.sqldevtools.parsers.feature.feature.group</featureId>
+      <featureId>org.eclipse.datatools.sqldevtools.results.feature.feature.group</featureId>
+      <featureId>org.eclipse.datatools.sqldevtools.schemaobjecteditor.feature.feature.group</featureId>
+      <featureId>org.eclipse.datatools.sqldevtools.sqlbuilder.feature.feature.group</featureId>
+      <featureId>org.eclipse.datatools.sqltools.doc.user.feature.group</featureId>
+
+      <featureId>org.eclipse.buildship.feature.group</featureId>
+      <featureId>org.eclipse.eclemma.feature.feature.group</featureId>
+
+      <!-- not available in Neon on 2016-02-21
+      <feature id="org.eclipse.egit.import" installMode="root"/>
+      -->
+      <featureId>org.eclipse.egit.feature.group</featureId>
+      <featureId>org.eclipse.egit.mylyn.feature.group</featureId>
+
+      <!--featureId>org.eclipse.jdt.feature.group</featureId-->
+
+      <featureId>org.eclipse.jpt.common.eclipselink.feature.feature.group</featureId>
+      <featureId>org.eclipse.jpt.common.feature.feature.group</featureId>
+      <featureId>org.eclipse.jpt.dbws.eclipselink.feature.feature.group</featureId>
+      <featureId>org.eclipse.jpt.jaxb.eclipselink.feature.feature.group</featureId>
+      <featureId>org.eclipse.jpt.jaxb.feature.feature.group</featureId>
+      <featureId>org.eclipse.jpt.jpa.eclipselink.feature.feature.group</featureId>
+      <featureId>org.eclipse.jpt.jpa.feature.feature.group</featureId>
+
+      <featureId>org.eclipse.jsf.feature.feature.group</featureId>
+
+      <featureId>org.eclipse.jst.common.fproj.enablement.jdt.feature.group</featureId>
+      <featureId>org.eclipse.jst.enterprise_ui.feature.feature.group</featureId>
+      <featureId>org.eclipse.jst.jsf.apache.trinidad.tagsupport.feature.feature.group</featureId>
+      <featureId>org.eclipse.jst.jsf.apache.trinidad.tagsupport.feature.feature.group</featureId>
+      <featureId>org.eclipse.jst.server_adapters.ext.feature.feature.group</featureId>
+      <featureId>org.eclipse.jst.server_adapters.feature.feature.group</featureId>
+      <featureId>org.eclipse.jst.server_ui.feature.feature.group</featureId>
+      <featureId>org.eclipse.jst.webpageeditor.feature.feature.group</featureId>
+      <featureId>org.eclipse.jst.webpageeditor.feature.feature.group</featureId>
+      <featureId>org.eclipse.jst.web_ui.feature.feature.group</featureId>
+      <featureId>org.eclipse.jst.ws.axis2tools.feature.feature.group</featureId>
+      <featureId>org.eclipse.jst.ws.axis2tools.feature.feature.group</featureId>
+      <featureId>org.eclipse.jst.ws.cxf.feature.feature.group</featureId>
+      <featureId>org.eclipse.jst.ws.jaxws.dom.feature.feature.group</featureId>
+      <featureId>org.eclipse.jst.ws.jaxws.feature.feature.group</featureId>
+
+      <featureId>org.eclipse.m2e.feature.feature.group</featureId>
+      <featureId>org.eclipse.m2e.logback.feature.feature.group</featureId>
+      <featureId>org.eclipse.m2e.wtp.feature.feature.group</featureId>
+      <featureId>org.eclipse.m2e.wtp.jaxrs.feature.feature.group</featureId>
+      <featureId>org.eclipse.m2e.wtp.jpa.feature.feature.group</featureId>
+      <featureId>org.eclipse.m2e.wtp.jsf.feature.feature.group</featureId>
+
+      <featureId>org.eclipse.mylyn.bugzilla_feature.feature.group</featureId>
+      <featureId>org.eclipse.mylyn.context_feature.feature.group</featureId>
+      <featureId>org.eclipse.mylyn_feature.feature.group</featureId>
+      <featureId>org.eclipse.mylyn.ide_feature.feature.group</featureId>
+      <featureId>org.eclipse.mylyn.java_feature.feature.group</featureId>
+      <featureId>org.eclipse.mylyn.wikitext_feature.feature.group</featureId>
+
+      <!--featureId>org.eclipse.pde.feature.group</featureId-->
+
+      <featureId>org.eclipse.recommenders.mylyn.rcp.feature.feature.group</featureId>
+      <featureId>org.eclipse.recommenders.rcp.feature.feature.group</featureId>
+
+      <featureId>org.eclipse.cft.server.core.feature.feature.group</featureId>
+      <featureId>org.eclipse.cft.server.ui.feature.feature.group</featureId>
+
+      <featureId>org.eclipse.tm.terminal.feature.feature.group</featureId>
+
+      <featureId>org.eclipse.wst.common.fproj.feature.group</featureId>
+      <featureId>org.eclipse.wst.jsdt.feature.feature.group</featureId>
+      <featureId>org.eclipse.wst.jsdt.chromium.debug.feature.feature.group</featureId>
+      <featureId>org.eclipse.wst.server_adapters.feature.feature.group</featureId>
+      <featureId>org.eclipse.wst.web_ui.feature.feature.group</featureId>
+      <featureId>org.eclipse.wst.xml_ui.feature.feature.group</featureId>
+      <featureId>org.eclipse.wst.xsl.feature.feature.group</featureId>
+
+      <featureId>org.eclipse.tips.feature.feature.group</featureId>
+
+
+<!--
+      <featureId>org.eclipse.datatools.common.doc.user.feature.group</featureId>
+      <featureId>org.eclipse.datatools.connectivity.doc.user.feature.group</featureId>
+      <featureId>org.eclipse.datatools.connectivity.feature.feature.group</featureId>
+      <featureId>org.eclipse.datatools.doc.user.feature.group</featureId>
+      <featureId>org.eclipse.datatools.enablement.feature.feature.group</featureId>
+      <featureId>org.eclipse.datatools.intro.feature.group</featureId>
+      <featureId>org.eclipse.datatools.modelbase.feature.feature.group</featureId>
+      <featureId>org.eclipse.datatools.sqldevtools.feature.feature.group</featureId>
+      <featureId>org.eclipse.datatools.sqltools.doc.user.feature.group</featureId>
+-->
+      <!-- not available in Neon on 2016-02-21
+      <featureId>org.eclipse.egit.import.feature.group</featureId>
+      -->
+      <!--
+      <featureId>org.eclipse.egit.feature.group</featureId>
+      <featureId>org.eclipse.egit.mylyn.feature.group</featureId>
+
+      <featureId>org.eclipse.jdt.feature.group</featureId>
+
+      <featureId>org.eclipse.jpt.common.eclipselink.feature.feature.group</featureId>
+      <featureId>org.eclipse.jpt.common.feature.feature.group</featureId>
+      <featureId>org.eclipse.jpt.dbws.eclipselink.feature.feature.group</featureId>
+      <featureId>org.eclipse.jpt.jaxb.eclipselink.feature.feature.group</featureId>
+      <featureId>org.eclipse.jpt.jaxb.feature.feature.group</featureId>
+      <featureId>org.eclipse.jpt.jpa.eclipselink.feature.feature.group</featureId>
+      <featureId>org.eclipse.jpt.jpa.feature.feature.group</featureId>
+
+      <featureId>org.eclipse.jsf.feature.feature.group</featureId>
+
+      <featureId>org.eclipse.jst.common.fproj.enablement.jdt.feature.group</featureId>
+      <featureId>org.eclipse.jst.enterprise_ui.feature.feature.group</featureId>
+      <featureId>org.eclipse.jst.jsf.apache.trinidad.tagsupport.feature.feature.group</featureId>
+      <featureId>org.eclipse.jst.jsf.apache.trinidad.tagsupport.feature.feature.group</featureId>
+      <featureId>org.eclipse.jst.server_adapters.ext.feature.feature.group</featureId>
+      <featureId>org.eclipse.jst.server_adapters.feature.feature.group</featureId>
+      <featureId>org.eclipse.jst.server_ui.feature.feature.group</featureId>
+      <featureId>org.eclipse.jst.webpageeditor.feature.feature.group</featureId>
+      <featureId>org.eclipse.jst.webpageeditor.feature.feature.group</featureId>
+      <featureId>org.eclipse.jst.web_ui.feature.feature.group</featureId>
+      <featureId>org.eclipse.jst.ws.axis2tools.feature.feature.group</featureId>
+      <featureId>org.eclipse.jst.ws.axis2tools.feature.feature.group</featureId>
+      <featureId>org.eclipse.jst.ws.cxf.feature.feature.group</featureId>
+      <featureId>org.eclipse.jst.ws.jaxws.dom.feature.feature.group</featureId>
+      <featureId>org.eclipse.jst.ws.jaxws.feature.feature.group</featureId>
+
+      <featureId>org.eclipse.m2e.feature.feature.group</featureId>
+      <featureId>org.eclipse.m2e.logback.feature.feature.group</featureId>
+      <featureId>org.eclipse.m2e.wtp.feature.feature.group</featureId>
+      <featureId>org.eclipse.m2e.wtp.jaxrs.feature.feature.group</featureId>
+      <featureId>org.eclipse.m2e.wtp.jpa.feature.feature.group</featureId>
+      <featureId>org.eclipse.m2e.wtp.jsf.feature.feature.group</featureId>
+
+      <featureId>org.eclipse.mylyn.bugzilla_feature.feature.group</featureId>
+      <featureId>org.eclipse.mylyn.context_feature.feature.group</featureId>
+      <featureId>org.eclipse.mylyn_feature.feature.group</featureId>
+      <featureId>org.eclipse.mylyn.ide_feature.feature.group</featureId>
+      <featureId>org.eclipse.mylyn.java_feature.feature.group</featureId>
+      <featureId>org.eclipse.mylyn.wikitext_feature.feature.group</featureId>
+
+      <featureId>org.eclipse.pde.feature.group</featureId>
+
+      <featureId>org.eclipse.recommenders.mylyn.rcp.feature.feature.group</featureId>
+      <featureId>org.eclipse.recommenders.rcp.feature.feature.group</featureId>
+
+      <featureId>org.eclipse.cft.server.core.feature.feature.group</featureId>
+      <featureId>org.eclipse.cft.server.ui.feature.feature.group</featureId>
+
+      <featureId>org.eclipse.rse.feature.group</featureId>
+      <featureId>org.eclipse.rse.useractions.feature.group</featureId>
+      <featureId>org.eclipse.tm.terminal.feature.feature.group</featureId>
+
+      <featureId>org.eclipse.wst.common.fproj.feature.group</featureId>
+      <featureId>org.eclipse.wst.jsdt.feature.feature.group</featureId>
+      <featureId>org.eclipse.wst.jsdt.chromium.debug.feature.feature.group</featureId>
+      <featureId>org.eclipse.wst.server_adapters.feature.feature.group</featureId>
+      <featureId>org.eclipse.wst.web_ui.feature.feature.group</featureId>
+      <featureId>org.eclipse.wst.xml_ui.feature.feature.group</featureId>
+      <featureId>org.eclipse.wst.xsl.feature.feature.group</featureId>
+-->
+    </plugin>
+
+    <!-- package.php -->
+    <plugin>
+      <name>package.php</name>
+      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <featureId>epp.package.php.feature.group</featureId>
+      <featureId>org.eclipse.php.mylyn.feature.group</featureId>
+      <featureId>org.eclipse.php.feature.group</featureId>
+      <featureId>org.eclipse.wst.jsdt.feature.feature.group</featureId>
+      <featureId>org.eclipse.wst.xml_ui.feature.feature.group</featureId>
+    </plugin>
+
+    <plugin>
+      <name>ZendPHPDebugger</name>
+      <!-- http://blog.gbinghan.com/2011/08/eclipse-zend-pdt-installation-error.html -->
+      <url>http://downloads.zend.com/pdt/</url>
+      <featureId>org.zend.php.debug_feature.feature.group</featureId>
+    </plugin>
+
+    <!-- package.cpp -->
+    <plugin>
+      <name>package.cpp</name>
+      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <featureId>epp.package.cpp</featureId>
+      <featureId>org.eclipse.cdt.feature.group</featureId>
+      <featureId>org.eclipse.cdt.autotools.feature.group</featureId>
+      <featureId>org.eclipse.cdt.build.crossgcc.feature.group</featureId>
+      <featureId>org.eclipse.cdt.debug.standalone.feature.group</featureId>
+      <featureId>org.eclipse.cdt.debug.ui.memory.feature.group</featureId>
+      <featureId>org.eclipse.cdt.launch.remote.feature.group</featureId>
+      <featureId>org.eclipse.cdt.msw.feature.group</featureId>
+      <featureId>org.eclipse.cdt.mylyn.feature.group</featureId>
+    </plugin>
+
+    <plugin>
+      <name>cmakeed</name>
+      <updateSite>http://master.dl.sourceforge.net/project/cmakeed/eclipse/site.xml</updateSite>
+      <featureId>com.cthing.cmakeed.feature.feature.group</featureId>
+    </plugin>
+
+
+    <!-- android -->
+    <plugin>
+      <name>Android</name>
+      <url>http://dl.google.com/android/android-sdk_r24.3.3-windows.zip</url>
+      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <featureId>com.android.ide.eclipse.ddms.feature.feature.group</featureId>
+      <featureId>com.android.ide.eclipse.adt.feature.feature.group</featureId>
+      <featureId>com.android.ide.eclipse.hierarchyviewer.feature.feature.group</featureId>
+      <featureId>com.android.ide.eclipse.traceview.feature.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>AndroidSource</name>
+      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <updateSite>http://adt-addons.googlecode.com/svn/trunk/source/com.android.ide.eclipse.source.update/</updateSite>
+      <featureId>com.android.ide.eclipse.source.feature.group</featureId>
+    </plugin>
+
+    <!-- ARM Development Studio 5 Community Edition for Eclipse version 3.7 (Indigo) 32-bit-->
+    <plugin>
+      <name>ARMDevStudio5</name>
+      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <updateSite>http://tools.arm.com/eclipse/</updateSite>
+      <featureId>com.arm.ds.community.feature.feature.group</featureId>
+    </plugin>
+
+    <!-- tools -->
+    <plugin>
+      <name>Subclipse</name>
+      <updateSite>https://dl.bintray.com/subclipse/releases/subclipse/latest/</updateSite>
+      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <featureId>org.tigris.subversion.subclipse.feature.group</featureId>
+      <featureId>org.tigris.subversion.clientadapter.feature.feature.group</featureId>
+      <featureId>org.tigris.subversion.clientadapter.javahl.feature.feature.group</featureId>
+      <featureId>org.tigris.subversion.clientadapter.svnkit.feature.feature.group</featureId>
+      <featureId>org.tmatesoft.svnkit.feature.group</featureId>
+      <featureId>org.tigris.subversion.subclipse.mylyn.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>egit</name>
+      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <featureId>org.eclipse.egit.feature.group</featureId>
+      <featureId>org.eclipse.egit.mylyn.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>egerrit</name>
+      <updateSite>http://download.eclipse.org/egerrit/updates/release/</updateSite>
+      <featureId>org.eclipse.egerrit.feature.feature.group</featureId>
+    </plugin>
+
+    <plugin>
+      <name>emfforms</name>
+      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <featureId>org.eclipse.emf.ecp.emfforms.sdk.feature.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>AnyEditTools</name>
+      <updateSite>http://andrei.gmxhome.de/eclipse/</updateSite>
+      <featureId>AnyEditTools.feature.group</featureId>
+      <!-- <url>https://dl.bintray.com/iloveeclipse/plugins/de.loskutov.anyedit.AnyEditTools_2.4.13.201503032100.jar</url> -->
+    </plugin>
+    <!--
+    <plugin>
+      <name>ContextMenu</name>
+      <url>http://timealias.bplaced.net/ContextMenuPlugin/contextmenu_1.2.3.jar</url>
+    </plugin>
+      -->
+    <plugin>
+      <name>StartExplorer</name>
+      <updateSite>http://basti1302.github.com/startexplorer/update/</updateSite>
+      <featureId>de.bastiankrol.startexplorer.feature.feature.group</featureId>
+    </plugin>
+    <!-- java tools -->
+    <plugin>
+      <name>JDepend4Eclipse</name>
+      <url>http://jdepend4eclipse.eclipselabs.org.codespot.com/files/de.loskutov.eclipse.jdepend_1.2.3.201108071203.jar</url>
+    </plugin>
+    <plugin>
+      <name>UCDetector</name>
+      <updateSite>http://ucdetector.sourceforge.net/update</updateSite>
+      <featureId>org.ucdetector.feature.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>FindBugs</name>
+      <updateSite>http://andrei.gmxhome.de/eclipse/</updateSite>
+      <featureId>edu.umd.cs.findbugs.plugin.eclipse.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>Lint4J</name>
+      <url>http://www.jutils.com/eclipse-update/lint4j-eclipse-plugin.zip</url>
+      <featureId>com.jutils.lint4j.core.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>Checkstyle</name>
+      <updateSite>http://eclipse-cs.sf.net/update/</updateSite>
+      <featureId>net.sf.eclipsecs.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>CheckstyleUnhandledExceptionCheck</name>
+      <url>http://free-plugins.eclipselabs.org.codespot.com/files/UnhandledExceptionCheck_1.0.0.jar</url>
+    </plugin>
+    <plugin>
+      <name>Log4E</name>
+      <url>http://log4e.jayefem.de/download/eclipse3/de.jayefem.log4e_free_1.3.3.zip</url>
+    </plugin>
+    <plugin>
+      <name>JavaSourceAttacher</name>
+      <updateSite>https://dl.bintray.com/tha/eclipserepo/</updateSite>
+      <featureId>org.freejava.javasourceattacher.feature.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>JavaExamplesSearch</name>
+      <updateSite>https://dl.bintray.com/tha/eclipserepo/</updateSite>
+      <featureId>org.freejava.javaexamplessearch.feature.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>WindowsTools</name>
+      <updateSite>https://dl.bintray.com/tha/eclipserepo/</updateSite>
+      <featureId>org.freejava.windowstools.feature.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>ProjectImpport</name>
+      <updateSite>https://dl.bintray.com/tha/eclipserepo/</updateSite>
+      <featureId>org.freejava.projectimpport.feature.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>ClassDependencyViewer</name>
+      <updateSite>https://dl.bintray.com/tha/eclipserepo/</updateSite>
+      <featureId>org.freejava.dependencyviewer.feature.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>TomcatPlugin</name>
+      <url>http://www.eclipsetotale.com/tomcatPlugin/tomcatPluginV33.zip</url>
+    </plugin>
+    <plugin>
+      <name>FileSync</name>
+      <updateSite>http://andrei.gmxhome.de/eclipse/</updateSite>
+      <featureId>FileSync.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>JavaHexEditor</name>
+      <url>http://nchc.dl.sourceforge.net/project/javahexeditor/javahexeditor/0.4.1/net.sourceforge.javahexeditor_0.4.1.jar</url>
+    </plugin>
+    <plugin>
+      <name>PropEdit</name>
+      <url>http://iij.dl.sourceforge.jp/propedit/40156/jp.gr.java_conf.ussiy.app.propedit_5.3.3.zip</url>
+    </plugin>
+    <plugin>
+      <name>eSpell</name>
+      <url>http://www.bdaum.de/eclipse/eSpell3/eSpell_3.2.4_site.zip</url>
+      <featureId>com.bdaum.SpellChecker3.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>QuickREx</name>
+      <url>http://nchc.dl.sourceforge.net/project/quickrex/QuickREx%20Plug-In/Version%203.5.0/QuickREx_3.5.0.jar</url>
+    </plugin>
+    <plugin>
+      <name>SQLExplorer</name>
+      <url>http://nchc.dl.sourceforge.net/project/eclipsesql/SQL%20Explorer%20Plugin/3.6.1/sqlexplorer_plugin-3.6.1_SR2.zip</url>
+    </plugin>
+    <plugin>
+      <name>CodePro</name>
+      <updateSite>http://dl.google.com/eclipse/inst/codepro/latest/3.7</updateSite>
+      <featureId>com.instantiations.eclipse.coverage.codepro.feature.group</featureId>
+      <featureId>com.instantiations.assist.eclipse.coverage.feature.group</featureId>
+      <featureId>com.instantiations.assist.eclipse.ant.feature.group</featureId>
+      <featureId>com.instantiations.assist.eclipse.audit.feature.group</featureId>
+      <featureId>com.instantiations.eclipse.core.feature.feature.group</featureId>
+      <featureId>com.instantiations.eclipse.analysis.appanalysis.feature.feature.group</featureId>
+      <featureId>com.instantiations.eclipse.unittester.feature.feature.group</featureId>
+      <featureId>com.instantiations.eclipse.analysis.utilities.feature.group</featureId>
+      <featureId>com.instantiations.eclipse.shared.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>JSEclipse</name>
+      <updateSite>http://download.macromedia.com/pub/labs/jseclipse/autoinstall/site.xml</updateSite>
+      <featureId>com.interaktonline.jseclipse.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>Spring</name>
+      <updateSite>http://dist.springsource.com/snapshot/TOOLS/nightly/e4.9</updateSite>
+      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <featureId>org.springframework.ide.eclipse.feature.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>EclipseTidy</name>
+      <url>http://nchc.dl.sourceforge.net/project/eclipsetidy/eclipsetidy/1.2.2/net.sf.eclipsetidy_1.2.2_local_site.zip</url>
+      <featureId>net.sf.eclipsetidy.feature.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>Hibernate</name>
+      <updateSite>http://download.jboss.org/jbosstools/updates/stable/photon/</updateSite>
+      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <featureId>org.hibernate.eclipse.feature.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>Hibernate_Struts</name>
+      <updateSite>http://download.jboss.org/jbosstools/updates/stable/photon/</updateSite>
+      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <featureId>org.hibernate.eclipse.feature.feature.group</featureId>
+      <featureId>org.jboss.tools.struts.feature.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>FreeMarker</name>
+      <updateSite>http://download.jboss.org/jbosstools/updates/stable/photon/</updateSite>
+      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <featureId>org.jboss.ide.eclipse.freemarker.feature.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>JAXRS</name>
+      <updateSite>http://download.jboss.org/jbosstools/updates/stable/photon/</updateSite>
+      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <featureId>org.jboss.tools.ws.jaxrs.feature.feature.group</featureId>
+    </plugin>
+
+
+    <plugin>
+      <name>Aptana-Nightly</name>
+      <updateSite>http://preview.appcelerator.com/aptana/studio3/plugin/update/nightly/</updateSite>
+      <featureId>com.aptana.webkitbrowser.feature.group</featureId>
+      <featureId>com.aptana.feature.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>OracleServers</name>
+      <updateSite>http://download.oracle.com/otn_software/oepe/12.2.1.6/photon/repository/</updateSite>
+      <updateSite>http://download.oracle.com/otn_software/oepe/12.2.1.6/photon/repository/dependencies/</updateSite>
+      <!-- Available url -->
+      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <!-- Glassfish and WebLogic -->
+      <!-- <featureId>oracle.eclipse.tools.glassfish.feature.group</featureId>  -->
+      <featureId>oracle.eclipse.tools.weblogic.feature.group</featureId>
+
+    </plugin>
+    <plugin>
+      <name>Mylyn</name>
+      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <updateSite>http://download.eclipse.org/mylyn/releases/latest</updateSite>
+      <featureId>org.eclipse.mylyn.bugzilla_feature.feature.group</featureId>
+      <featureId>org.eclipse.mylyn.context_feature.feature.group</featureId>
+      <featureId>org.eclipse.mylyn.ide_feature.feature.group</featureId>
+      <featureId>org.eclipse.mylyn.java_feature.feature.group</featureId>
+      <featureId>org.eclipse.mylyn.team_feature.feature.group</featureId>
+      <featureId>org.eclipse.mylyn.wikitext_feature.feature.group</featureId>
+      <featureId>org.eclipse.mylyn_feature.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>MylynGerrit</name>
+      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <updateSite>http://download.eclipse.org/mylyn/releases/latest</updateSite>
+      <featureId>org.eclipse.mylyn.gerrit.feature.feature.group</featureId>
+      <featureId>org.eclipse.mylyn.gerrit.dashboard.feature.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>MylynGit</name>
+      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <updateSite>http://download.eclipse.org/mylyn/releases/latest</updateSite>
+      <featureId>org.eclipse.mylyn.git.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>MylynJenkins</name>
+      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <updateSite>http://download.eclipse.org/mylyn/releases/latest</updateSite>
+      <featureId>org.eclipse.mylyn.hudson.feature.group</featureId>
+    </plugin>
+
+
+    <plugin>
+      <name>JIRA</name>
+      <updateSite>http://update.atlassian.com/atlassian-eclipse-plugin/rest/e3.7</updateSite>
+      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <updateSite>http://download.eclipse.org/mylyn/releases/latest</updateSite>
+      <featureId>com.atlassian.connector.eclipse.jira.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>Jetty</name>
+      <updateSite>http://download.eclipse.org/jetty/updates/jetty-wtp/</updateSite>
+      <featureId>org.eclipse.jst.server.jetty.feature.feature.group</featureId>
+    </plugin>
+
+
+    <plugin>
+      <name>Terminal</name>
+      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <featureId>org.eclipse.rse.feature.group</featureId>
+      <featureId>org.eclipse.rse.useractions.feature.group</featureId>
+      <featureId>org.eclipse.tm.terminal.feature.group</featureId>
+      <featureId>org.eclipse.tm.terminal.ssh.feature.group</featureId>
+      <featureId>org.eclipse.tm.terminal.telnet.feature.group</featureId>
+      <featureId>org.eclipse.tm.terminal.view.feature.group</featureId>
+    </plugin>
+
+    <plugin>
+      <name>BytecodeOutline</name>
+      <updateSite>http://andrei.gmxhome.de/eclipse/</updateSite>
+      <featureId>de.loskutov.BytecodeOutline.feature.feature.group</featureId>
+    </plugin>
+
+    <plugin>
+      <name>EclipseCodeRecommenders</name>
+      <updateSite>http://download.eclipse.org/recommenders/updates/stable/</updateSite>
+      <featureId>org.eclipse.recommenders.feature.completion.rcp.intellig.e37.feature.group</featureId>
+    </plugin>
+
+
+    <plugin>
+      <name>GoogleAppEngine</name>
+      <updateSite>https://dl.google.com/eclipse/plugin/4.5</updateSite>
+      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <updateSite>http://download.eclipse.org/m2e-wtp/releases/photon/</updateSite>
+      <featureId>com.google.appengine.eclipse.wtp.maven.feature.feature.group</featureId>
+      <featureId>com.google.gdt.eclipse.suite.e44.feature.feature.group</featureId>
+      <featureId>com.google.appengine.eclipse.sdkbundle.feature.feature.group</featureId>
+    </plugin>
+
+    <plugin>
+      <name>datanucleus</name>
+      <updateSite>http://www.datanucleus.org/downloads/eclipse-update/</updateSite>
+      <featureId>org.datanucleus.ide.eclipse.feature.feature.group</featureId>
+    </plugin>
+
+
+    <plugin>
+      <name>Gradle</name>
+      <updateSite>http://download.eclipse.org/buildship/updates/e48/releases/2.x</updateSite>
+      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <featureId>org.eclipse.buildship.feature.group</featureId>
+    </plugin>
+
+    <plugin>
+      <name>JRockitMC</name><!--  for JRockit VM only -->
+      <updateSite>http://download.oracle.com/technology/products/missioncontrol/updatesites/base/4.1.0/eclipse/</updateSite>
+      <featureId>com.jrockit.mc.feature.ide.feature.group</featureId>
+    </plugin>
+
+    <plugin>
+      <name>JRockitMCExperimental</name><!--  for JRockit VM only -->
+      <updateSite>http://download.oracle.com/technology/products/missioncontrol/updatesites/experimental/4.1.0/eclipse/</updateSite>
+      <featureId>com.jrockit.mc.feature.console.ext.coherence.feature.group</featureId>
+      <featureId>com.jrockit.mc.feature.console.action.hprof.feature.group</featureId>
+      <featureId>com.jrockit.mc.feature.jconsole.feature.group</featureId>
+      <featureId>com.jrockit.mc.feature.dtrace.recorder.feature.group</featureId>
+      <featureId>com.jrockit.mc.feature.dtrace.ide.feature.group</featureId>
+      <featureId>com.jrockit.mc.feature.dtrace.samples.feature.group</featureId>
+      <featureId>com.jrockit.mc.feature.flightrecorder.backgroundrendering.feature.group</featureId>
+      <featureId>com.jrockit.mc.feature.flightrecorder.ext.wls.feature.group</featureId>
+      <featureId>com.jrockit.mc.feature.wls.feature.group</featureId>
+    </plugin>
+
+    <plugin><!--  for HotSpot VM only, target JVM must be started with  -XX:+UnlockCommercialFeatures -XX:+FlightRecorder -->
+      <name>JavaMC4HotSpotVM</name>
+      <url>http://download.oracle.com/technology/products/missioncontrol/updatesites/jmc-updatesite-5.5.1.zip</url>
+      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <featureId>com.jrockit.mc.feature.ide.feature.group</featureId>
+    </plugin>
+
+    <plugin><!--  for HotSpot VM only -->
+      <name>TPTP</name>
+      <updateSite>http://download.eclipse.org/tptp/updates/</updateSite>
+      <featureId>org.eclipse.tptp.monitoring.runtime.feature.group</featureId>
+      <featureId>org.eclipse.tptp.platform.runtime.feature.group</featureId>
+      <featureId>org.eclipse.tptp.wtp.feature.group</featureId>
+      <featureId>org.eclipse.tptp.examples.feature.group</featureId>
+      <featureId>org.eclipse.tptp.birt.feature.group</featureId>
+      <featureId>org.eclipse.tptp.test.runtime.feature.group</featureId>
+      <featureId>org.eclipse.tptp.trace.runtime.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>TestNG</name>
+      <updateSite>http://beust.com/eclipse</updateSite>
+      <featureId>org.testng.eclipse.feature.group</featureId>
+    </plugin>
+
+    <plugin>
+      <name>Sonar</name>
+      <updateSite>http://downloads.sonarsource.com/eclipse/eclipse/</updateSite>
+      <featureId>org.sonar.ide.eclipse.jdt.feature.feature.group</featureId>
+      <featureId>org.sonar.ide.eclipse.m2e.feature.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>Sonarlint</name>
+      <updateSite>http://eclipse.sonarlint.org/</updateSite>
+      <featureId>org.sonarlint.eclipse.feature.feature.group</featureId>
+      <featureId>org.sonarlint.eclipse.jdt.feature.feature.group</featureId>
+    </plugin>
+
+    <plugin>
+      <name>Optimizer</name>
+      <updateSite>http://update.zeroturnaround.com/free-tools/site/</updateSite>
+      <featureId>com.zeroturnaround.eclipse.optimizer.feature.feature.group</featureId>
+    </plugin>
+
+    <plugin>
+      <name>Kotlin</name>
+      <updateSite>https://dl.bintray.com/jetbrains/kotlin/eclipse-plugin/last/</updateSite>
+      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <featureId>org.jetbrains.kotlin.feature.feature.group</featureId>
+    </plugin>
+    <plugin>
+      <name>eclemma</name>
+      <updateSite>http://update.eclemma.org/</updateSite>
+      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <featureId>org.eclipse.eclemma.feature.feature.group</featureId>
+    </plugin>
+
+
+  </plugins>
+</eclipse>
