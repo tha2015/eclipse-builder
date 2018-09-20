@@ -9,6 +9,7 @@
       <embeded>true</embeded>
       <updateSite>http://dist.springsource.org/snapshot/GRECLIPSE/e4.9</updateSite>
       <featureId>org.codehaus.groovy.eclipse.feature.feature.group</featureId>
+      <featureId>org.codehaus.groovy25.feature.feature.group</featureId>
       <featureId>org.codehaus.groovy24.feature.feature.group</featureId>
       <featureId>org.codehaus.groovy.jdt.patch.feature.group</featureId>
     </plugin>
@@ -103,16 +104,15 @@
       <name>package.jee</name>
       <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
       <updateSite>http://download.eclipse.org/mylyn/releases/latest</updateSite>
-      <updateSite>http://download.eclipse.org/webtools/downloads/drops/R3.11.0/I-3.11.0-20180910170749/repository/</updateSite>
 
       <!-- https://git.eclipse.org/r/#/c/67004/3/packages/org.eclipse.epp.package.jee.product/epp.product  -->
       <!--  https://bugs.eclipse.org/bugs/show_bug.cgi?id=332989#c19 -->
-<!--
+
       <featureId>org.eclipse.epp.package.jee.feature.feature.group</featureId>
       <featureId>org.eclipse.epp.package.common.feature.feature.group</featureId>
       <featureId>org.eclipse.platform.feature.group</featureId>
       <featureId>org.eclipse.epp.mpc.feature.group</featureId>
--->
+
       <featureId>org.eclipse.datatools.common.doc.user.feature.group</featureId>
       <featureId>org.eclipse.datatools.connectivity.doc.user.feature.group</featureId>
       <featureId>org.eclipse.datatools.connectivity.feature.feature.group</featureId>
@@ -159,7 +159,7 @@
       <featureId>org.eclipse.egit.feature.group</featureId>
       <featureId>org.eclipse.egit.mylyn.feature.group</featureId>
 
-      <!--featureId>org.eclipse.jdt.feature.group</featureId-->
+      <featureId>org.eclipse.jdt.feature.group</featureId>
 
       <featureId>org.eclipse.jpt.common.eclipselink.feature.feature.group</featureId>
       <featureId>org.eclipse.jpt.common.feature.feature.group</featureId>
@@ -201,7 +201,7 @@
       <featureId>org.eclipse.mylyn.java_feature.feature.group</featureId>
       <featureId>org.eclipse.mylyn.wikitext_feature.feature.group</featureId>
 
-      <!--featureId>org.eclipse.pde.feature.group</featureId-->
+      <featureId>org.eclipse.pde.feature.group</featureId>
 
       <featureId>org.eclipse.recommenders.mylyn.rcp.feature.feature.group</featureId>
       <featureId>org.eclipse.recommenders.rcp.feature.feature.group</featureId>
@@ -222,7 +222,7 @@
       <featureId>org.eclipse.tips.feature.feature.group</featureId>
 
 
-<!--
+
       <featureId>org.eclipse.datatools.common.doc.user.feature.group</featureId>
       <featureId>org.eclipse.datatools.connectivity.doc.user.feature.group</featureId>
       <featureId>org.eclipse.datatools.connectivity.feature.feature.group</featureId>
@@ -232,11 +232,11 @@
       <featureId>org.eclipse.datatools.modelbase.feature.feature.group</featureId>
       <featureId>org.eclipse.datatools.sqldevtools.feature.feature.group</featureId>
       <featureId>org.eclipse.datatools.sqltools.doc.user.feature.group</featureId>
--->
+
       <!-- not available in Neon on 2016-02-21
       <featureId>org.eclipse.egit.import.feature.group</featureId>
       -->
-      <!--
+
       <featureId>org.eclipse.egit.feature.group</featureId>
       <featureId>org.eclipse.egit.mylyn.feature.group</featureId>
 
@@ -301,7 +301,7 @@
       <featureId>org.eclipse.wst.web_ui.feature.feature.group</featureId>
       <featureId>org.eclipse.wst.xml_ui.feature.feature.group</featureId>
       <featureId>org.eclipse.wst.xsl.feature.feature.group</featureId>
--->
+
     </plugin>
 
     <!-- package.php -->
@@ -523,7 +523,8 @@
     </plugin>
     <plugin>
       <name>Spring</name>
-      <updateSite>http://dist.springsource.com/snapshot/TOOLS/nightly/e4.9</updateSite>
+      <url>https://download.springsource.com/release/TOOLS/update/3.9.6.RELEASE/e4.9/springsource-tool-suite-3.9.6.RELEASE-e4.9.0-updatesite.zip</url>
+      <updateSite>http://download.springsource.com/release/TOOLS/update/e4.9/</updateSite>
       <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
       <featureId>org.springframework.ide.eclipse.feature.feature.group</featureId>
     </plugin>
@@ -666,7 +667,6 @@
 
     <plugin>
       <name>Gradle</name>
-      <updateSite>http://download.eclipse.org/buildship/updates/e48/releases/2.x</updateSite>
       <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
       <featureId>org.eclipse.buildship.feature.group</featureId>
     </plugin>
