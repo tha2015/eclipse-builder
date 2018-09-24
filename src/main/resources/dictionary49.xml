@@ -53,9 +53,10 @@
       <updateSite>http://download.eclipse.org/mylyn/releases/latest</updateSite>
 
 
-      <!-- https://git.eclipse.org/r/#/c/67008/2/packages/org.eclipse.epp.package.rcp.product/epp.product -->
-
-      <featureId>epp.package.rcp</featureId>
+      <featureId>org.eclipse.epp.package.rcp.feature.feature.group</featureId>
+      <featureId>org.eclipse.epp.package.common.feature.feature.group</featureId>
+      <featureId>org.eclipse.platform.feature.group</featureId>
+      <featureId>org.eclipse.epp.mpc.feature.group</featureId>
 
       <featureId>org.eclipse.jdt.feature.group</featureId>
       <featureId>org.eclipse.pde.feature.group</featureId>
@@ -63,11 +64,10 @@
       <featureId>org.eclipse.rcp.source.feature.group</featureId>
 
       <featureId>org.eclipse.buildship.feature.group</featureId>
-
       <featureId>org.eclipse.e4.core.tools.feature.feature.group</featureId>
       <featureId>org.eclipse.eclemma.feature.feature.group</featureId>
       <!-- not available in Neon on 2016-02-21
-      <featureId>org.eclipse.egit.import"/>
+      <featureId>org.eclipse.egit.import.feature.group</featureId>
       -->
       <featureId>org.eclipse.egit.feature.group</featureId>
       <featureId>org.eclipse.egit.mylyn.feature.group</featureId>
@@ -90,6 +90,8 @@
       <featureId>org.eclipse.swtbot.eclipse.feature.group</featureId>
       <featureId>org.eclipse.swtbot.ide.feature.group</featureId>
       <featureId>org.eclipse.wst.xml_ui.feature.feature.group</featureId>
+
+
     </plugin>
     <plugin>
       <name>e4tools</name>
@@ -154,7 +156,7 @@
       <featureId>org.eclipse.eclemma.feature.feature.group</featureId>
 
       <!-- not available in Neon on 2016-02-21
-      <feature id="org.eclipse.egit.import" installMode="root"/>
+      <featureId>org.eclipse.egit.import" installMode="root"/>
       -->
       <featureId>org.eclipse.egit.feature.group</featureId>
       <featureId>org.eclipse.egit.mylyn.feature.group</featureId>
@@ -326,15 +328,53 @@
     <plugin>
       <name>package.cpp</name>
       <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
-      <featureId>epp.package.cpp</featureId>
+
+      <featureId>org.eclipse.epp.package.cpp.feature.feature.group</featureId>
+      <featureId>org.eclipse.epp.package.common.feature.feature.group</featureId>
+      <featureId>org.eclipse.platform.feature.group</featureId>
+      <featureId>org.eclipse.epp.mpc.feature.group</featureId>
+
       <featureId>org.eclipse.cdt.feature.group</featureId>
       <featureId>org.eclipse.cdt.autotools.feature.group</featureId>
       <featureId>org.eclipse.cdt.build.crossgcc.feature.group</featureId>
+      <featureId>org.eclipse.cdt.qt.feature.group</featureId>
+      <featureId>org.eclipse.cdt.arduino.feature.group</featureId>
+      <featureId>org.eclipse.cdt.cmake.feature.group</featureId>
+      <featureId>org.eclipse.cdt.meson.feature.group</featureId>
+      <featureId>org.eclipse.cdt.docker.launcher.feature.group</featureId>
+      <featureId>org.eclipse.cdt.debug.gdbjtag.feature.group</featureId>
       <featureId>org.eclipse.cdt.debug.standalone.feature.group</featureId>
       <featureId>org.eclipse.cdt.debug.ui.memory.feature.group</featureId>
       <featureId>org.eclipse.cdt.launch.remote.feature.group</featureId>
-      <featureId>org.eclipse.cdt.msw.feature.group</featureId>
+      <featureId>org.eclipse.cdt.launch.serial.feature.feature.group</featureId>
+      <featureId>org.eclipse.cdt.testsrunner.feature.feature.group</featureId>
       <featureId>org.eclipse.cdt.mylyn.feature.group</featureId>
+      <featureId>org.eclipse.egit.feature.group</featureId>
+
+      <featureId>org.eclipse.linuxtools.cdt.libhover.feature.feature.group</featureId>
+      <featureId>org.eclipse.linuxtools.cdt.libhover.devhelp.feature.feature.group</featureId>
+      <featureId>org.eclipse.linuxtools.changelog.c.feature.group</featureId>
+      <featureId>org.eclipse.linuxtools.gcov.feature.group</featureId>
+      <featureId>org.eclipse.linuxtools.gprof.feature.feature.group</featureId>
+      <featureId>org.eclipse.linuxtools.rpm.feature.group</featureId>
+      <featureId>org.eclipse.linuxtools.valgrind.feature.group</featureId>
+
+      <featureId>org.eclipse.mylyn.bugzilla_feature.feature.group</featureId>
+      <featureId>org.eclipse.mylyn.context_feature.feature.group</featureId>
+      <featureId>org.eclipse.mylyn_feature.feature.group</featureId>
+      <featureId>org.eclipse.mylyn.ide_feature.feature.group</featureId>
+      <featureId>org.eclipse.mylyn.team_feature.feature.group</featureId>
+      <featureId>org.eclipse.mylyn.wikitext_feature.feature.group</featureId>
+
+      <featureId>org.eclipse.tm.terminal.feature.feature.group</featureId>
+      <featureId>org.eclipse.tm.terminal.connector.cdtserial.feature.feature.group</featureId>
+
+      <featureId>org.eclipse.tracecompass.gdbtrace.feature.group</featureId>
+      <featureId>org.eclipse.tracecompass.lttng2.control.feature.group</featureId>
+      <featureId>org.eclipse.tracecompass.lttng2.kernel.feature.group</featureId>
+      <featureId>org.eclipse.tracecompass.lttng2.ust.feature.group</featureId>
+
+
     </plugin>
 
     <plugin>

@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <eclipse>
   <workDir>/Users/tha/tmp</workDir>
-  <url>http://download.eclipse.org/eclipse/downloads/drops4/R-4.7.3-201803010715/eclipse-SDK-4.7.3-macosx-cocoa-x86_64.dmg</url>
-  <dictionary>/dictionary4.xml</dictionary>
+  <url>http://download.eclipse.org/eclipse/downloads/drops4/R-4.9-201809060745/eclipse-SDK-4.9-macosx-cocoa-x86_64.dmg</url>
+  <dictionary>/dictionary49.xml</dictionary>
   <plugins>
     <plugin>
       <name>package.jee</name>
     </plugin>
+
     <plugin>
       <name>package.cpp</name>
     </plugin>
@@ -23,6 +24,8 @@
     <plugin>
       <name>Groovy</name>
     </plugin>
+
+
     <plugin>
       <name>Gradle</name>
     </plugin>
@@ -52,6 +55,7 @@
     <plugin>
       <name>ClassDependencyViewer</name>
     </plugin>
+
     <plugin>
       <name>Kotlin</name>
     </plugin>
