@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <eclipse>
   <workDir>/home/tha/tmp</workDir>
-  <url>http://download.eclipse.org/eclipse/downloads/drops4/R-4.9-201809060745/eclipse-SDK-4.9-linux-gtk-x86_64.tar.gz</url>
+  <url>http://download.eclipse.org/eclipse/downloads/drops4/R-4.10-201812060815/eclipse-SDK-4.10-linux-gtk-x86_64.tar.gz</url>
+
   <dictionary>/dictionary49.xml</dictionary>
   <plugins>
     <plugin>

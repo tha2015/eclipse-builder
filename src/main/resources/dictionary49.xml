@@ -2,12 +2,12 @@
 <eclipse>
   <workDir>/tmp</workDir>
   <profile>SDKProfile</profile>
-  <url>http://mirrors.syringanetworks.net/eclipse/eclipse/downloads/drops4/R-4.9-201809060745/eclipse-SDK-4.9-linux-gtk-x86_64.tar.gz</url>
+  <url>http://download.eclipse.org/eclipse/downloads/drops4/R-4.10-201812060815/eclipse-SDK-4.10-linux-gtk-x86_64.tar.gz</url>
   <plugins>
     <plugin>
       <name>Groovy</name>
       <embeded>true</embeded>
-      <updateSite>http://dist.springsource.org/snapshot/GRECLIPSE/e4.9</updateSite>
+      <updateSite>http://dist.springsource.org/release/GRECLIPSE/3.2.0/e4.10</updateSite>
       <featureId>org.codehaus.groovy.eclipse.feature.feature.group</featureId>
       <featureId>org.codehaus.groovy25.feature.feature.group</featureId>
       <featureId>org.codehaus.groovy24.feature.feature.group</featureId>
@@ -15,12 +15,12 @@
     </plugin>
     <plugin>
       <name>m2e</name>
-      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <updateSite>http://download.eclipse.org/releases/2018-12</updateSite>
       <featureId>org.eclipse.m2e.feature.feature.group</featureId>
     </plugin>
     <plugin>
       <name>m2e-wtp</name>
-      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <updateSite>http://download.eclipse.org/releases/2018-12</updateSite>
       <featureId>org.eclipse.m2e.wtp.feature.feature.group</featureId>
     </plugin>
 
@@ -35,21 +35,21 @@
     <!-- zest -->
     <plugin>
       <name>Zest</name>
-      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <updateSite>http://download.eclipse.org/releases/2018-12</updateSite>
       <featureId>org.eclipse.zest.feature.group</featureId>
     </plugin>
 
     <!-- MarketplaceClient -->
     <plugin>
       <name>MarketplaceClient</name>
-      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <updateSite>http://download.eclipse.org/releases/2018-12</updateSite>
       <featureId>org.eclipse.epp.mpc.feature.group</featureId>
     </plugin>
 
     <!-- package.rcp -->
     <plugin>
       <name>package.rcp</name>
-      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <updateSite>http://download.eclipse.org/releases/2018-12</updateSite>
       <updateSite>http://download.eclipse.org/mylyn/releases/latest</updateSite>
 
 
@@ -95,7 +95,7 @@
     </plugin>
     <plugin>
       <name>e4tools</name>
-      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <updateSite>http://download.eclipse.org/releases/2018-12</updateSite>
       <featureId>org.eclipse.e4.core.tools.feature.source.feature.group</featureId>
       <updateSite>http://dl.bintray.com/vogellacompany/e4tools</updateSite>
       <featureId>org.eclipse.e4.tools.spies.feature.feature.group</featureId>
@@ -104,7 +104,7 @@
     <!-- package.jee -->
     <plugin>
       <name>package.jee</name>
-      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <updateSite>http://download.eclipse.org/releases/2018-12</updateSite>
       <updateSite>http://download.eclipse.org/mylyn/releases/latest</updateSite>
 
       <!-- https://git.eclipse.org/r/#/c/67004/3/packages/org.eclipse.epp.package.jee.product/epp.product  -->
@@ -165,7 +165,9 @@
 
       <featureId>org.eclipse.jpt.common.eclipselink.feature.feature.group</featureId>
       <featureId>org.eclipse.jpt.common.feature.feature.group</featureId>
+      <!-- Bug 539852 remove feature as not compatible w/ JDK 11
       <featureId>org.eclipse.jpt.dbws.eclipselink.feature.feature.group</featureId>
+      -->
       <featureId>org.eclipse.jpt.jaxb.eclipselink.feature.feature.group</featureId>
       <featureId>org.eclipse.jpt.jaxb.feature.feature.group</featureId>
       <featureId>org.eclipse.jpt.jpa.eclipselink.feature.feature.group</featureId>
@@ -204,9 +206,6 @@
       <featureId>org.eclipse.mylyn.wikitext_feature.feature.group</featureId>
 
       <featureId>org.eclipse.pde.feature.group</featureId>
-
-      <featureId>org.eclipse.recommenders.mylyn.rcp.feature.feature.group</featureId>
-      <featureId>org.eclipse.recommenders.rcp.feature.feature.group</featureId>
 
       <featureId>org.eclipse.cft.server.core.feature.feature.group</featureId>
       <featureId>org.eclipse.cft.server.ui.feature.feature.group</featureId>
@@ -224,92 +223,12 @@
       <featureId>org.eclipse.tips.feature.feature.group</featureId>
 
 
-
-      <featureId>org.eclipse.datatools.common.doc.user.feature.group</featureId>
-      <featureId>org.eclipse.datatools.connectivity.doc.user.feature.group</featureId>
-      <featureId>org.eclipse.datatools.connectivity.feature.feature.group</featureId>
-      <featureId>org.eclipse.datatools.doc.user.feature.group</featureId>
-      <featureId>org.eclipse.datatools.enablement.feature.feature.group</featureId>
-      <featureId>org.eclipse.datatools.intro.feature.group</featureId>
-      <featureId>org.eclipse.datatools.modelbase.feature.feature.group</featureId>
-      <featureId>org.eclipse.datatools.sqldevtools.feature.feature.group</featureId>
-      <featureId>org.eclipse.datatools.sqltools.doc.user.feature.group</featureId>
-
-      <!-- not available in Neon on 2016-02-21
-      <featureId>org.eclipse.egit.import.feature.group</featureId>
-      -->
-
-      <featureId>org.eclipse.egit.feature.group</featureId>
-      <featureId>org.eclipse.egit.mylyn.feature.group</featureId>
-
-      <featureId>org.eclipse.jdt.feature.group</featureId>
-
-      <featureId>org.eclipse.jpt.common.eclipselink.feature.feature.group</featureId>
-      <featureId>org.eclipse.jpt.common.feature.feature.group</featureId>
-      <featureId>org.eclipse.jpt.dbws.eclipselink.feature.feature.group</featureId>
-      <featureId>org.eclipse.jpt.jaxb.eclipselink.feature.feature.group</featureId>
-      <featureId>org.eclipse.jpt.jaxb.feature.feature.group</featureId>
-      <featureId>org.eclipse.jpt.jpa.eclipselink.feature.feature.group</featureId>
-      <featureId>org.eclipse.jpt.jpa.feature.feature.group</featureId>
-
-      <featureId>org.eclipse.jsf.feature.feature.group</featureId>
-
-      <featureId>org.eclipse.jst.common.fproj.enablement.jdt.feature.group</featureId>
-      <featureId>org.eclipse.jst.enterprise_ui.feature.feature.group</featureId>
-      <featureId>org.eclipse.jst.jsf.apache.trinidad.tagsupport.feature.feature.group</featureId>
-      <featureId>org.eclipse.jst.jsf.apache.trinidad.tagsupport.feature.feature.group</featureId>
-      <featureId>org.eclipse.jst.server_adapters.ext.feature.feature.group</featureId>
-      <featureId>org.eclipse.jst.server_adapters.feature.feature.group</featureId>
-      <featureId>org.eclipse.jst.server_ui.feature.feature.group</featureId>
-      <featureId>org.eclipse.jst.webpageeditor.feature.feature.group</featureId>
-      <featureId>org.eclipse.jst.webpageeditor.feature.feature.group</featureId>
-      <featureId>org.eclipse.jst.web_ui.feature.feature.group</featureId>
-      <featureId>org.eclipse.jst.ws.axis2tools.feature.feature.group</featureId>
-      <featureId>org.eclipse.jst.ws.axis2tools.feature.feature.group</featureId>
-      <featureId>org.eclipse.jst.ws.cxf.feature.feature.group</featureId>
-      <featureId>org.eclipse.jst.ws.jaxws.dom.feature.feature.group</featureId>
-      <featureId>org.eclipse.jst.ws.jaxws.feature.feature.group</featureId>
-
-      <featureId>org.eclipse.m2e.feature.feature.group</featureId>
-      <featureId>org.eclipse.m2e.logback.feature.feature.group</featureId>
-      <featureId>org.eclipse.m2e.wtp.feature.feature.group</featureId>
-      <featureId>org.eclipse.m2e.wtp.jaxrs.feature.feature.group</featureId>
-      <featureId>org.eclipse.m2e.wtp.jpa.feature.feature.group</featureId>
-      <featureId>org.eclipse.m2e.wtp.jsf.feature.feature.group</featureId>
-
-      <featureId>org.eclipse.mylyn.bugzilla_feature.feature.group</featureId>
-      <featureId>org.eclipse.mylyn.context_feature.feature.group</featureId>
-      <featureId>org.eclipse.mylyn_feature.feature.group</featureId>
-      <featureId>org.eclipse.mylyn.ide_feature.feature.group</featureId>
-      <featureId>org.eclipse.mylyn.java_feature.feature.group</featureId>
-      <featureId>org.eclipse.mylyn.wikitext_feature.feature.group</featureId>
-
-      <featureId>org.eclipse.pde.feature.group</featureId>
-
-      <featureId>org.eclipse.recommenders.mylyn.rcp.feature.feature.group</featureId>
-      <featureId>org.eclipse.recommenders.rcp.feature.feature.group</featureId>
-
-      <featureId>org.eclipse.cft.server.core.feature.feature.group</featureId>
-      <featureId>org.eclipse.cft.server.ui.feature.feature.group</featureId>
-
-      <featureId>org.eclipse.rse.feature.group</featureId>
-      <featureId>org.eclipse.rse.useractions.feature.group</featureId>
-      <featureId>org.eclipse.tm.terminal.feature.feature.group</featureId>
-
-      <featureId>org.eclipse.wst.common.fproj.feature.group</featureId>
-      <featureId>org.eclipse.wst.jsdt.feature.feature.group</featureId>
-      <featureId>org.eclipse.wst.jsdt.chromium.debug.feature.feature.group</featureId>
-      <featureId>org.eclipse.wst.server_adapters.feature.feature.group</featureId>
-      <featureId>org.eclipse.wst.web_ui.feature.feature.group</featureId>
-      <featureId>org.eclipse.wst.xml_ui.feature.feature.group</featureId>
-      <featureId>org.eclipse.wst.xsl.feature.feature.group</featureId>
-
     </plugin>
 
     <!-- package.php -->
     <plugin>
       <name>package.php</name>
-      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <updateSite>http://download.eclipse.org/releases/2018-12</updateSite>
       <featureId>epp.package.php.feature.group</featureId>
       <featureId>org.eclipse.php.mylyn.feature.group</featureId>
       <featureId>org.eclipse.php.feature.group</featureId>
@@ -327,7 +246,7 @@
     <!-- package.cpp -->
     <plugin>
       <name>package.cpp</name>
-      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <updateSite>http://download.eclipse.org/releases/2018-12</updateSite>
 
       <featureId>org.eclipse.epp.package.cpp.feature.feature.group</featureId>
       <featureId>org.eclipse.epp.package.common.feature.feature.group</featureId>
@@ -388,7 +307,7 @@
     <plugin>
       <name>Android</name>
       <url>http://dl.google.com/android/android-sdk_r24.3.3-windows.zip</url>
-      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <updateSite>http://download.eclipse.org/releases/2018-12</updateSite>
       <featureId>com.android.ide.eclipse.ddms.feature.feature.group</featureId>
       <featureId>com.android.ide.eclipse.adt.feature.feature.group</featureId>
       <featureId>com.android.ide.eclipse.hierarchyviewer.feature.feature.group</featureId>
@@ -396,7 +315,7 @@
     </plugin>
     <plugin>
       <name>AndroidSource</name>
-      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <updateSite>http://download.eclipse.org/releases/2018-12</updateSite>
       <updateSite>http://adt-addons.googlecode.com/svn/trunk/source/com.android.ide.eclipse.source.update/</updateSite>
       <featureId>com.android.ide.eclipse.source.feature.group</featureId>
     </plugin>
@@ -404,7 +323,7 @@
     <!-- ARM Development Studio 5 Community Edition for Eclipse version 3.7 (Indigo) 32-bit-->
     <plugin>
       <name>ARMDevStudio5</name>
-      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <updateSite>http://download.eclipse.org/releases/2018-12</updateSite>
       <updateSite>http://tools.arm.com/eclipse/</updateSite>
       <featureId>com.arm.ds.community.feature.feature.group</featureId>
     </plugin>
@@ -413,7 +332,7 @@
     <plugin>
       <name>Subclipse</name>
       <updateSite>https://dl.bintray.com/subclipse/releases/subclipse/latest/</updateSite>
-      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <updateSite>http://download.eclipse.org/releases/2018-12</updateSite>
       <featureId>org.tigris.subversion.subclipse.feature.group</featureId>
       <featureId>org.tigris.subversion.clientadapter.feature.feature.group</featureId>
       <featureId>org.tigris.subversion.clientadapter.javahl.feature.feature.group</featureId>
@@ -423,7 +342,7 @@
     </plugin>
     <plugin>
       <name>egit</name>
-      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <updateSite>http://download.eclipse.org/releases/2018-12</updateSite>
       <featureId>org.eclipse.egit.feature.group</featureId>
       <featureId>org.eclipse.egit.mylyn.feature.group</featureId>
     </plugin>
@@ -435,7 +354,7 @@
 
     <plugin>
       <name>emfforms</name>
-      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <updateSite>http://download.eclipse.org/releases/2018-12</updateSite>
       <featureId>org.eclipse.emf.ecp.emfforms.sdk.feature.feature.group</featureId>
     </plugin>
     <plugin>
@@ -563,9 +482,8 @@
     </plugin>
     <plugin>
       <name>Spring</name>
-      <url>https://download.springsource.com/release/TOOLS/update/3.9.6.RELEASE/e4.9/springsource-tool-suite-3.9.6.RELEASE-e4.9.0-updatesite.zip</url>
-      <updateSite>http://download.springsource.com/release/TOOLS/update/e4.9/</updateSite>
-      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <updateSite>http://download.springsource.com/release/TOOLS/sts4/update/e4.10/</updateSite>
+      <updateSite>http://download.eclipse.org/releases/2018-12</updateSite>
       <featureId>org.springframework.ide.eclipse.feature.feature.group</featureId>
     </plugin>
     <plugin>
@@ -576,26 +494,26 @@
     <plugin>
       <name>Hibernate</name>
       <updateSite>http://download.jboss.org/jbosstools/updates/stable/photon/</updateSite>
-      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <updateSite>http://download.eclipse.org/releases/2018-12</updateSite>
       <featureId>org.hibernate.eclipse.feature.feature.group</featureId>
     </plugin>
     <plugin>
       <name>Hibernate_Struts</name>
       <updateSite>http://download.jboss.org/jbosstools/updates/stable/photon/</updateSite>
-      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <updateSite>http://download.eclipse.org/releases/2018-12</updateSite>
       <featureId>org.hibernate.eclipse.feature.feature.group</featureId>
       <featureId>org.jboss.tools.struts.feature.feature.group</featureId>
     </plugin>
     <plugin>
       <name>FreeMarker</name>
       <updateSite>http://download.jboss.org/jbosstools/updates/stable/photon/</updateSite>
-      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <updateSite>http://download.eclipse.org/releases/2018-12</updateSite>
       <featureId>org.jboss.ide.eclipse.freemarker.feature.feature.group</featureId>
     </plugin>
     <plugin>
       <name>JAXRS</name>
       <updateSite>http://download.jboss.org/jbosstools/updates/stable/photon/</updateSite>
-      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <updateSite>http://download.eclipse.org/releases/2018-12</updateSite>
       <featureId>org.jboss.tools.ws.jaxrs.feature.feature.group</featureId>
     </plugin>
 
@@ -611,7 +529,7 @@
       <updateSite>http://download.oracle.com/otn_software/oepe/12.2.1.6/photon/repository/</updateSite>
       <updateSite>http://download.oracle.com/otn_software/oepe/12.2.1.6/photon/repository/dependencies/</updateSite>
       <!-- Available url -->
-      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <updateSite>http://download.eclipse.org/releases/2018-12</updateSite>
       <!-- Glassfish and WebLogic -->
       <!-- <featureId>oracle.eclipse.tools.glassfish.feature.group</featureId>  -->
       <featureId>oracle.eclipse.tools.weblogic.feature.group</featureId>
@@ -619,7 +537,7 @@
     </plugin>
     <plugin>
       <name>Mylyn</name>
-      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <updateSite>http://download.eclipse.org/releases/2018-12</updateSite>
       <updateSite>http://download.eclipse.org/mylyn/releases/latest</updateSite>
       <featureId>org.eclipse.mylyn.bugzilla_feature.feature.group</featureId>
       <featureId>org.eclipse.mylyn.context_feature.feature.group</featureId>
@@ -631,20 +549,20 @@
     </plugin>
     <plugin>
       <name>MylynGerrit</name>
-      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <updateSite>http://download.eclipse.org/releases/2018-12</updateSite>
       <updateSite>http://download.eclipse.org/mylyn/releases/latest</updateSite>
       <featureId>org.eclipse.mylyn.gerrit.feature.feature.group</featureId>
       <featureId>org.eclipse.mylyn.gerrit.dashboard.feature.feature.group</featureId>
     </plugin>
     <plugin>
       <name>MylynGit</name>
-      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <updateSite>http://download.eclipse.org/releases/2018-12</updateSite>
       <updateSite>http://download.eclipse.org/mylyn/releases/latest</updateSite>
       <featureId>org.eclipse.mylyn.git.feature.group</featureId>
     </plugin>
     <plugin>
       <name>MylynJenkins</name>
-      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <updateSite>http://download.eclipse.org/releases/2018-12</updateSite>
       <updateSite>http://download.eclipse.org/mylyn/releases/latest</updateSite>
       <featureId>org.eclipse.mylyn.hudson.feature.group</featureId>
     </plugin>
@@ -653,7 +571,7 @@
     <plugin>
       <name>JIRA</name>
       <updateSite>http://update.atlassian.com/atlassian-eclipse-plugin/rest/e3.7</updateSite>
-      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <updateSite>http://download.eclipse.org/releases/2018-12</updateSite>
       <updateSite>http://download.eclipse.org/mylyn/releases/latest</updateSite>
       <featureId>com.atlassian.connector.eclipse.jira.feature.group</featureId>
     </plugin>
@@ -666,7 +584,7 @@
 
     <plugin>
       <name>Terminal</name>
-      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <updateSite>http://download.eclipse.org/releases/2018-12</updateSite>
       <featureId>org.eclipse.rse.feature.group</featureId>
       <featureId>org.eclipse.rse.useractions.feature.group</featureId>
       <featureId>org.eclipse.tm.terminal.feature.group</featureId>
@@ -691,7 +609,7 @@
     <plugin>
       <name>GoogleAppEngine</name>
       <updateSite>https://dl.google.com/eclipse/plugin/4.5</updateSite>
-      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <updateSite>http://download.eclipse.org/releases/2018-12</updateSite>
       <updateSite>http://download.eclipse.org/m2e-wtp/releases/photon/</updateSite>
       <featureId>com.google.appengine.eclipse.wtp.maven.feature.feature.group</featureId>
       <featureId>com.google.gdt.eclipse.suite.e44.feature.feature.group</featureId>
@@ -707,7 +625,7 @@
 
     <plugin>
       <name>Gradle</name>
-      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <updateSite>http://download.eclipse.org/releases/2018-12</updateSite>
       <featureId>org.eclipse.buildship.feature.group</featureId>
     </plugin>
 
@@ -734,7 +652,7 @@
     <plugin><!--  for HotSpot VM only, target JVM must be started with  -XX:+UnlockCommercialFeatures -XX:+FlightRecorder -->
       <name>JavaMC4HotSpotVM</name>
       <url>http://download.oracle.com/technology/products/missioncontrol/updatesites/jmc-updatesite-5.5.1.zip</url>
-      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <updateSite>http://download.eclipse.org/releases/2018-12</updateSite>
       <featureId>com.jrockit.mc.feature.ide.feature.group</featureId>
     </plugin>
 
@@ -777,13 +695,13 @@
     <plugin>
       <name>Kotlin</name>
       <updateSite>https://dl.bintray.com/jetbrains/kotlin/eclipse-plugin/last/</updateSite>
-      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <updateSite>http://download.eclipse.org/releases/2018-12</updateSite>
       <featureId>org.jetbrains.kotlin.feature.feature.group</featureId>
     </plugin>
     <plugin>
       <name>eclemma</name>
       <updateSite>http://update.eclemma.org/</updateSite>
-      <updateSite>http://download.eclipse.org/releases/2018-09</updateSite>
+      <updateSite>http://download.eclipse.org/releases/2018-12</updateSite>
       <featureId>org.eclipse.eclemma.feature.feature.group</featureId>
     </plugin>
 
