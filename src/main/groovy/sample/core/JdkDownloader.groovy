@@ -13,6 +13,22 @@ class JdkDownloader {
             // https://techtavern.wordpress.com/2014/03/25/portable-java-8-sdk-on-windows/
             unpackJDK(dir, downloadJDK(dir, url), jdkDir)
 
+			int count = 0
+			File singleDir = null
+			jdkDir.eachFile() { file->
+				if (file.isDirectory()) {
+					singleDir = file
+				}
+				count ++
+			}
+			if (count == 1 && singleDir != null) {
+				def ant = new AntBuilder()
+				ant.move(todir: jdkDir) {
+					fileset (dir: singleDir)
+				}
+				ant.delete (dir: singleDir)
+			}
+
             if (src != null) {
                 downloadWithOptionalMd5Check(new File(jdkDir, "src.zip"), src, null)
             } else if (!new File(jdkDir, "src.zip").exists()) {
@@ -63,15 +79,20 @@ class JdkDownloader {
     }
 
     private File unpackJDK(File tmpDir, File jdkFilePath, File jdkDir) {
-        // 7za920.zip MD5 2fac454a90ae96021f4ffc607d4c00f8
-        // 7z920.msi MD5 9bd44a22bffe0e4e0b71b8b4cf3a80e2
-        File file7za = new File(tmpDir, "7za.zip")
-        File file7zmsi = new File(tmpDir, "7z.msi")
-        File dir7zmsi = new File(tmpDir, "7zmsi")
-        downloadWithOptionalMd5Check(file7za, "http://www.mirrorservice.org/sites/downloads.sourceforge.net/s/se/sevenzip/7-Zip/9.20/7za920.zip", "2fac454a90ae96021f4ffc607d4c00f8")
-        downloadWithOptionalMd5Check(file7zmsi, "http://www.mirrorservice.org/sites/downloads.sourceforge.net/s/se/sevenzip/7-Zip/9.20/7z920.msi", "9bd44a22bffe0e4e0b71b8b4cf3a80e2")
-        File file7zexe = unzip7z(tmpDir, file7za, file7zmsi, dir7zmsi)
-        unzipjdk(tmpDir, file7zexe, jdkFilePath, jdkDir)
+		if (jdkFilePath.absolutePath.endsWith(".zip")) {
+			unzipjdk(tmpDir, null, jdkFilePath, jdkDir)
+		} else {
+	        // 7za920.zip MD5 2fac454a90ae96021f4ffc607d4c00f8
+	        // 7z920.msi MD5 9bd44a22bffe0e4e0b71b8b4cf3a80e2
+	        File file7za = new File(tmpDir, "7za.zip")
+	        File file7zmsi = new File(tmpDir, "7z.msi")
+	        File dir7zmsi = new File(tmpDir, "7zmsi")
+	        downloadWithOptionalMd5Check(file7za, "http://www.mirrorservice.org/sites/downloads.sourceforge.net/s/se/sevenzip/7-Zip/9.20/7za920.zip", "2fac454a90ae96021f4ffc607d4c00f8")
+	        downloadWithOptionalMd5Check(file7zmsi, "http://www.mirrorservice.org/sites/downloads.sourceforge.net/s/se/sevenzip/7-Zip/9.20/7z920.msi", "9bd44a22bffe0e4e0b71b8b4cf3a80e2")
+	        File file7zexe = unzip7z(tmpDir, file7za, file7zmsi, dir7zmsi)
+	        unzipjdk(tmpDir, file7zexe, jdkFilePath, jdkDir)
+		}
+
     }
 
     private String downloadWithOptionalMd5Check(File aFile, String url, String md5) {
@@ -109,31 +130,37 @@ class JdkDownloader {
 
     private void unzipjdk(File tmpDir, File file7zexe, File jdkFilePath, File jdkDir) {
         def ant = new AntBuilder()
-        ant.mkdir (dir: "${jdkDir}/tmp")
-        ant.exec(executable: file7zexe) {
-            arg (line: "e -y")
-            arg (value: "-o${jdkDir}/tmp")
-            arg (value: jdkFilePath)
-        }
-        if (new File("${jdkDir}/tmp/111").exists()) {
-			ant.exec(executable: file7zexe) {
-				arg (line: "e -y")
-				arg (value: "-o${jdkDir}/tmp")
-				arg (value: "${jdkDir}/tmp/111")
-			}
-        }
-        ant.unzip(src: "${jdkDir}/tmp/tools.zip", dest: jdkDir)
-        ant.delete (dir: "${jdkDir}/tmp")
-        jdkDir.eachDirRecurse() { dir ->
-            dir.eachFileMatch(~/.*.pack/) { file ->
-                String[] tokens = file.name.split("\\.(?=[^\\.]+\$)")
 
-                ant.exec(executable: new File(jdkDir, 'bin/unpack200.exe'), dir: file.parentFile) {
-                    arg (value: "--remove-pack-file")
-                    arg (value: file)
-                    arg (value: tokens[0] + ".jar")
-                }
-            }
-        }
+		if (jdkFilePath.absolutePath.endsWith(".zip")) {
+			ant.mkdir (dir: jdkDir)
+	        ant.unzip(src: jdkFilePath, dest: jdkDir)
+		} else {
+	        ant.mkdir (dir: "${jdkDir}/tmp")
+	        ant.exec(executable: file7zexe) {
+	            arg (line: "e -y")
+	            arg (value: "-o${jdkDir}/tmp")
+	            arg (value: jdkFilePath)
+	        }
+	        if (new File("${jdkDir}/tmp/111").exists()) {
+				ant.exec(executable: file7zexe) {
+					arg (line: "e -y")
+					arg (value: "-o${jdkDir}/tmp")
+					arg (value: "${jdkDir}/tmp/111")
+				}
+	        }
+	        ant.unzip(src: "${jdkDir}/tmp/tools.zip", dest: jdkDir)
+	        ant.delete (dir: "${jdkDir}/tmp")
+	        jdkDir.eachDirRecurse() { dir ->
+	            dir.eachFileMatch(~/.*.pack/) { file ->
+	                String[] tokens = file.name.split("\\.(?=[^\\.]+\$)")
+
+	                ant.exec(executable: new File(jdkDir, 'bin/unpack200.exe'), dir: file.parentFile) {
+	                    arg (value: "--remove-pack-file")
+	                    arg (value: file)
+	                    arg (value: tokens[0] + ".jar")
+	                }
+	            }
+	        }
+		}
     }
 }
