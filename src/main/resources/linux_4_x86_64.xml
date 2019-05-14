@@ -8,7 +8,7 @@
     <plugin>
       <name>package.jee</name>
     </plugin>
-    <!--
+    
     <plugin>
       <name>package.cpp</name>
     </plugin>
@@ -33,10 +33,7 @@
       <name>m2e-wtp</name>
     </plugin>
 
-    <plugin>
-      <name>Optimizer</name>
-    </plugin>
-
+  
     <plugin>
       <name>AnyEditTools</name>
     </plugin>
@@ -55,7 +52,7 @@
       <name>ClassDependencyViewer</name>
     </plugin>
 
--->
+
 
   </plugins>
 </eclipse>

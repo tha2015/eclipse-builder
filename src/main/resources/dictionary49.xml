@@ -83,9 +83,6 @@
       <featureId>org.eclipse.mylyn.pde_feature.feature.group</featureId>
       <featureId>org.eclipse.mylyn.wikitext_feature.feature.group</featureId>
       <featureId>org.eclipse.rap.tools.feature.feature.group</featureId>
-      <featureId>org.eclipse.recommenders.mylyn.rcp.feature.feature.group</featureId>
-      <featureId>org.eclipse.recommenders.rcp.feature.feature.group</featureId>
-      <featureId>org.eclipse.recommenders.snipmatch.rcp.feature.feature.group</featureId>
       <featureId>org.eclipse.swtbot.eclipse.gef.feature.group</featureId>
       <featureId>org.eclipse.swtbot.eclipse.feature.group</featureId>
       <featureId>org.eclipse.swtbot.ide.feature.group</featureId>
