@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <eclipse>
   <workDir>T:/tmp64</workDir>
-  <url>http://download.eclipse.org/eclipse/downloads/drops4/R-4.11-201903070500/eclipse-SDK-4.11-win32-x86_64.zip</url>
+  <url>http://download.eclipse.org/eclipse/downloads/drops4/R-4.12-201906051800/eclipse-SDK-4.12-win32-x86_64.zip</url>
   <jdkUrl>https://download.java.net/java/GA/jdk11/9/GPL/openjdk-11.0.2_windows-x64_bin.zip</jdkUrl>
   <jdkSrcUrl>https://download.java.net/openjdk/jdk11/ri/openjdk-11+28_src.zip</jdkSrcUrl>
 

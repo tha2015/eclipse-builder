@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <eclipse>
   <workDir>/Users/tha/tmp</workDir>
-  <url>http://download.eclipse.org/eclipse/downloads/drops4/R-4.9-201809060745/eclipse-SDK-4.9-macosx-cocoa-x86_64.dmg</url>
+  <url>http://download.eclipse.org/eclipse/downloads/drops4/R-4.12-201906051800/eclipse-SDK-4.12-macosx-cocoa-x86_64.dmg</url>
   <dictionary>/dictionary49.xml</dictionary>
   <plugins>
     <plugin>
@@ -35,10 +35,6 @@
     </plugin>
 
     <plugin>
-      <name>Optimizer</name>
-    </plugin>
-
-    <plugin>
       <name>AnyEditTools</name>
     </plugin>
     <plugin>
@@ -56,12 +52,6 @@
       <name>ClassDependencyViewer</name>
     </plugin>
 
-    <plugin>
-      <name>Kotlin</name>
-    </plugin>
-    <plugin>
-      <name>eclemma</name>
-    </plugin>
 
 
   </plugins>
