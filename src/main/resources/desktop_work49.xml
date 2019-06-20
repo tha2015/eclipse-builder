@@ -2,8 +2,8 @@
 <eclipse>
   <workDir>T:/tmp64</workDir>
   <url>http://download.eclipse.org/eclipse/downloads/drops4/R-4.12-201906051800/eclipse-SDK-4.12-win32-x86_64.zip</url>
-  <jdkUrl>https://download.java.net/java/GA/jdk11/9/GPL/openjdk-11.0.2_windows-x64_bin.zip</jdkUrl>
-  <jdkSrcUrl>https://download.java.net/openjdk/jdk11/ri/openjdk-11+28_src.zip</jdkSrcUrl>
+  <jdkUrl>https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.3%2B7/OpenJDK11U-x64_windows_11.0.3_7.zip</jdkUrl>
+  <jdkSrcUrl>https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.3%2B7/OpenJDK11U-sources_11.0.3_7.tar.gz</jdkSrcUrl>
 
   <dictionary>/dictionary49.xml</dictionary>
   <plugins>
